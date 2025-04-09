@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <h2>Welcome to AI House Rent Predictor</h2>
+    <h3>Predict the rent of your house</h3>
+    <form action="/predict" method="POST">
+      <label for="area">Area (in sq ft):</label>
+      <input type="text" id="area" name="area" required /><br /><br />
+      <label for="bedrooms">Number of Bedrooms:</label>
+      <input type="text" id="bedrooms" name="bedrooms" required /><br /><br />
+      <label for="bathrooms">Number of Bathrooms:</label>
+      <input type="text" id="bathrooms" name="bathrooms" required /><br /><br />
+      <input type="submit" value="Predict Rent" />
+  </body>
+</html>
