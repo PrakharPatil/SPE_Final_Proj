@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DeepWriter - Chat</title>
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.png" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/components/navbar.css" />
+    <link rel="stylesheet" href="/styles/chat.css" />
+  </head>
+  <body>
+    {% include "navbar.html" %}
+
+    <div class="chat-container">
+      <img src="/assets/shapes/shape3.png" class="float-shape shape-2" />
+      <img src="/assets/shapes/shape1.png" class="float-shape shape-1" />
+
+      <div class="chat-content">
+        <h1 class="chat-title">DeepWriter</h1>
+        <p class="chat-subtitle">Real-time AI-powered Assistance</p>
+
+        <div class="message-box" id="chatMessages">
+          <div class="ai-message">
+            How can I assist with your writing today?
+          </div>
+        </div>
+
+        <div class="chat-input-container">
+          <div class="input-wrapper">
+            <input
+              type="text"
+              class="chat-input"
+              placeholder="Type your message..."
+              id="userInput"
+            />
+            <button class="send-button" id="sendMessageBtn">
+              <svg class="send-icon" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M2,21L23,12L2,3V10L17,12L2,14V21Z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/scripts/main.js"></script>
+    <script src="/scripts/chat.js"></script>
+  </body>
+</html>

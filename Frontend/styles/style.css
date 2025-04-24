@@ -1,0 +1,146 @@
+/* Base Styles */
+:root {
+  --primary-color: #2d3436;
+  --secondary-color: #636e72;
+  --accent-color: #e74c3c;
+  --bg-color: #f5f5f5;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background: var(--bg-color);
+  min-height: 100vh;
+}
+/* Add this to styles/style.css */
+:root {
+  --primary-color: #2d3436;
+  --secondary-color: #636e72;
+  --accent: #e74c3c;
+  --bg: #f5f5f5;
+}
+
+/* Hero Section - Pure Style Transfer */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  background: var(--bg);
+}
+
+.hero h1 {
+  font-size: 4.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0.9;
+  margin: 0 0 15px 0;
+  color: var(--primary-color);
+}
+
+.hero p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  margin: 0 0 30px 0;
+}
+
+/* Floating Elements */
+.floating-shape {
+  position: absolute;
+  z-index: 0;
+  animation: float 6s ease-in-out infinite;
+  opacity: 0.15;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  33% {
+    transform: translate(10px, -15px) rotate(3deg);
+  }
+  66% {
+    transform: translate(-10px, 10px) rotate(-3deg);
+  }
+}
+
+/* Position your existing shapes */
+.floating-shape:nth-of-type(1) {
+  top: 20%;
+  left: 15%;
+  width: 120px;
+}
+
+.floating-shape:nth-of-type(2) {
+  bottom: 25%;
+  right: 10%;
+  width: 150px;
+  animation-delay: 2s;
+}
+
+/* CTA Button - Pure Style */
+.cta-button {
+  position: relative;
+  z-index: 1;
+  padding: 15px 40px;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 30px;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap");
+
+:root {
+  --font-primary: "Inter", sans-serif;
+}
+
+/* Apply to all elements */
+* {
+  font-family: var(--font-primary);
+}
+
+/* Specific font weights */
+.navbar,
+.brand,
+.nav-links a {
+  font-weight: 500;
+}
+
+.hero-heading,
+.chat-title,
+.section-title {
+  font-weight: 900;
+}
+
+.hero-subheading,
+.chat-subtitle,
+.feature-text {
+  font-weight: 300;
+}
+
+.cta-button,
+.save-button {
+  font-weight: 600;
+}
+/* Import Component Styles */
+@import url("./components/navbar.css");
+@import url("./components/about.css");
+@import url("./components/contact.css");
