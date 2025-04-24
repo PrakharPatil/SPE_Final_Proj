@@ -1,159 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI House Rent Predictor</title>
-{#    <style>#}
-{#      /* Reset default margin and padding for all elements */#}
-{#      * {#}
-{#        margin: 0;#}
-{#        padding: 0;#}
-{#        box-sizing: border-box;#}
-{#      }#}
-{##}
-{#      /* Body styling */#}
-{#      body {#}
-{#        font-family: Arial, sans-serif;#}
-{#        background-color: #f4f4f4;#}
-{#        display: flex;#}
-{#        justify-content: center;#}
-{#        align-items: center;#}
-{#        height: 100vh;#}
-{#        text-align: center;#}
-{#        margin: 0;#}
-{#        padding: 20px;#}
-{#      }#}
-{##}
-{#      /* Centering the content in the page */#}
-{#      .container {#}
-{#        background-color: #fff;#}
-{#        padding: 2em;#}
-{#        border-radius: 8px;#}
-{#        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);#}
-{#        width: 100%;#}
-{#        max-width: 600px;#}
-{#        margin-top: 0;#}
-{#      }#}
-{##}
-{#      h1, h2 {#}
-{#        color: #333;#}
-{#      }#}
-{##}
-{#      h3 {#}
-{#        color: #777;#}
-{#        font-weight: normal;#}
-{#      }#}
-{##}
-{#      form {#}
-{#        display: flex;#}
-{#        flex-direction: column;#}
-{#        gap: 1em;#}
-{#        margin-top: 1.5em;#}
-{#      }#}
-{##}
-{#      label {#}
-{#        font-weight: bold;#}
-{#        text-align: left;#}
-{#        margin-bottom: 0.5em;#}
-{#        font-size: 1em;#}
-{#        color: #444;#}
-{#      }#}
-{##}
-{#      input {#}
-{#        padding: 10px;#}
-{#        border: 1px solid #ddd;#}
-{#        border-radius: 5px;#}
-{#        font-size: 1em;#}
-{#        width: 100%;#}
-{#      }#}
-{##}
-{#      input[type="number"] {#}
-{#        -moz-appearance: textfield;#}
-{#      }#}
-{##}
-{#      input[type="number"]::-webkit-outer-spin-button,#}
-{#      input[type="number"]::-webkit-inner-spin-button {#}
-{#        -webkit-appearance: none;#}
-{#        margin: 0;#}
-{#      }#}
-{##}
-{#      button {#}
-{#        background-color: #4CAF50;#}
-{#        color: white;#}
-{#        padding: 15px;#}
-{#        font-size: 1.1em;#}
-{#        border: none;#}
-{#        border-radius: 5px;#}
-{#        cursor: pointer;#}
-{#        transition: background-color 0.3s ease;#}
-{#      }#}
-{##}
-{#      button:hover {#}
-{#        background-color: #45a049;#}
-{#      }#}
-{##}
-{#      /* Add responsiveness to make sure content fits well on all screen sizes */#}
-{#      @media screen and (max-width: 1600px) {#}
-{#        .container {#}
-{#          padding: 1em;#}
-{#        }#}
-{##}
-{#        button {#}
-{#          font-size: 1em;#}
-{#          padding: 12px;#}
-{#        }#}
-{#      }#}
-{#    </style>#}
+    <title>AI Text Generator</title>
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.png">
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/components/navbar.css" />
+    <link rel="stylesheet" href="/styles/components/about.css" />
+    <link rel="stylesheet" href="/styles/components/contact.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Welcome to AI House Rent Predictor</h1>
-      <h2>Predict the rent of your house</h2>
-      <h3>Fill in the details below:</h3>
-      <form action="/predict" method="post">
-        <!-- Area and Bedrooms fields added -->
-        <label for="area">Size in sqft</label>
-        <input id="area" name="area" type="number" placeholder="Enter the size of the house" required>
+    {% include "navbar.html" %}
 
-        <label for="bedrooms">Number of Bedrooms</label>
-        <input id="bedrooms" name="bedrooms" type="number" placeholder="Enter number of bedrooms" required>
+    <section class="hero">
+      <h1>AI-Powered Text Generation</h1>
+      <p>
+        Experience seamless, real-time text creation with our advanced
+        transformer-based Model.</p>
+        <a href="/chat" class="cta-button">Start Writing</a>
+        <img src="/assets/shapes/shape1.png" class="floating-shape" />
+        <img src="/assets/shapes/shape3.png" class="floating-shape" />
+        <img src="/assets/shapes/shape2.png" class="floating-shape" />
+        <!-- <img src="/assets/shapes/shape4.png" class="floating-shape" /> -->
+      </p>
+    </section>
 
-        <label for="bathrooms">Number of Bathrooms</label>
-        <input id="bathrooms" name="bathrooms" type="number" placeholder="Enter number of bathrooms" required>
+    {% include "about.html" %} {% include "contact.html" %}
 
-        <label for="area_type">Area Type</label>
-        <input id="area_type" name="area_type" type="number" placeholder="Enter area type code (e.g., 1 for Urban)" required>
-
-        <label for="city">City</label>
-        <input id="city" name="city" type="number" placeholder="Enter city code (e.g., 1 for New York)" required>
-
-        <label for="furnishing">Furnishing Status</label>
-        <input id="furnishing" name="furnishing" type="number" placeholder="Enter furnishing status code (e.g., 0 for Unfurnished)" required>
-
-        <label for="tenant">Tenant Preferred</label>
-        <input id="tenant" name="tenant" type="number" placeholder="Enter tenant preference (e.g., 0 for No preference)" required>
-
-        <label for="contact">Point of Contact</label>
-        <input id="contact" name="contact" type="number" placeholder="Enter point of contact code" required>
-
-        <label for="posted_month">Month Posted</label>
-        <input id="posted_month" name="posted_month" type="number" placeholder="Enter month posted (1-12)" required>
-
-        <label for="posted_year">Year Posted</label>
-        <input id="posted_year" name="posted_year" type="number" placeholder="Enter year posted" required>
-
-        <label for="current_floor">Current Floor</label>
-        <input id="current_floor" name="current_floor" type="number" placeholder="Enter current floor number" required>
-
-        <label for="total_floor">Total Floors</label>
-        <input id="total_floor" name="total_floor" type="number" placeholder="Enter total number of floors" required>
-
-        <label for="area_te">Area in TE</label>
-        <input id="area_te" name="area_te" type="number" step="0.01" placeholder="Enter area in TE (e.g., 1.5)" required>
-
-        <button type="submit">Predict Rent</button>
-      </form>
-    </div>
+    <script src="/scripts/main.js"></script>
   </body>
 </html>
