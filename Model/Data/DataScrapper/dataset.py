@@ -1,10 +1,10 @@
 import datasets
 
 # File paths
-L1_FILE = "L1_ChildrenStories.txt"
-L2_FILE = "L2_BookCorpus.txt"
-L3_FILE = "L3_CNN_DailyMail.txt"
-L4_FILE = "L4_S2ORC.txt"
+L1_FILE = "../L1_ChildrenStories.txt"
+L2_FILE = "../L2_BookCorpus.txt"
+L3_FILE = "../L3_CNN_DailyMail.txt"
+L4_FILE = "../L4_S2ORC.txt"
 
 def process_dataset(dataset_name, output_file, text_keys, dataset_config=None):
     """Loads a dataset, extracts specified text fields, and writes up to 500MB of data to a file."""
