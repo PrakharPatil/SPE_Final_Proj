@@ -21,7 +21,7 @@
         <p class="chat-subtitle">Real-time AI-powered Assistance</p>
 
         <div class="message-box" id="chatMessages">
-          <div class="ai-message">
+          <div class="ai-message message">
             How can I assist with your writing today?
           </div>
         </div>
@@ -33,8 +33,9 @@
               class="chat-input"
               placeholder="Type your message..."
               id="userInput"
+              autocomplete="off"
             />
-            <button class="send-button" id="sendMessageBtn">
+            <button class="send-button" id="sendMessageBtn" aria-label="Send message">
               <svg class="send-icon" viewBox="0 0 24 24">
                 <path
                   fill="currentColor"

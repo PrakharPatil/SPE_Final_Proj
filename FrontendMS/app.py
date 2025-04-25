@@ -1,71 +1,12 @@
-# from fastapi import FastAPI, Form, Request
-# from fastapi.responses import HTMLResponse
-# from fastapi.templating import Jinja2Templates
-# import joblib
-# import pandas as pd
-#
-# # Load the pre-trained model pipeline (ensure it contains preprocessing steps)
-# model = joblib.load("../TransformerMS/random_forest_pipeline.joblib")
-#
-# app = FastAPI()
-# templates = Jinja2Templates(directory="templates")
-#
-# @app.get("/", response_class=HTMLResponse)
-# async def form_page(request: Request):
-#     return templates.TemplateResponse("index.html", {"request": request})
-#
-# @app.post("/predict", response_class=HTMLResponse)
-# async def predict(
-#     request: Request,
-#     area: int = Form(...),
-#     bedrooms: int = Form(...),
-#     bathrooms: int = Form(...),
-#     area_type: int = Form(...),
-#     city: int = Form(...),
-#     furnishing: int = Form(...),
-#     tenant: int = Form(...),
-#     contact: int = Form(...),
-#     posted_month: int = Form(...),
-#     posted_year: int = Form(...),
-#     current_floor: int = Form(...),
-#     total_floor: int = Form(...),
-#     area_te: float = Form(...)
-# ):
-#     # Construct DataFrame with expected feature names
-#     input_data = pd.DataFrame([{
-#         'BHK': bedrooms,
-#         'Size': area,
-#         'Area Type': area_type,
-#         'City': city,
-#         'Furnishing Status': furnishing,
-#         'Tenant Preferred': tenant,
-#         'Bathroom': bathrooms,
-#         'Point of Contact': contact,
-#         'Posted_Month': posted_month,
-#         'Posted_Year': posted_year,
-#         'Current_Floor': current_floor,
-#         'Total_Floor': total_floor,
-#         'Area_Locality_TE': area_te
-#     }])
-#
-#     try:
-#         # Predict using model (ensure model handles necessary preprocessing internally)
-#         predicted_rent = model.predict(input_data)[0]
-#
-#         return templates.TemplateResponse("result.html", {
-#             "request": request,
-#             "predicted_rent": f"₹{int(predicted_rent):,}"
-#         })
-#     except Exception as e:
-#         # Handle any errors during prediction and return a user-friendly message
-#         return templates.TemplateResponse("result.html", {
-#             "request": request,
-#             "predicted_rent": "Error in prediction. Please try again later."
-#         })
-from fastapi import FastAPI, Request
+import httpx
+import uvicorn
+from fastapi import FastAPI, Request, Form, HTTPException
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import os
+from pydantic import BaseModel
+from fastapi import Body  # Add this import
+
 
 app = FastAPI()
 
@@ -81,6 +22,9 @@ app.mount("/styles", StaticFiles(directory=os.path.join(BASE_DIR, "styles")), na
 app.mount("/assets", StaticFiles(directory=os.path.join(BASE_DIR, "assets")), name="assets")
 app.mount("/scripts", StaticFiles(directory=os.path.join(BASE_DIR, "scripts")), name="scripts")
 
+# Backend service URL (update port if different)
+BACKEND_URL = "http://localhost:8081/generate"
+
 @app.get("/")
 async def home(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
@@ -88,3 +32,26 @@ async def home(request: Request):
 @app.get("/chat")
 async def chat_page(request: Request):
     return templates.TemplateResponse("chat.html", {"request": request})
+
+
+
+
+
+# Add this model definition
+class GenerationRequest(BaseModel):
+    prompt: str
+
+@app.post("/api/generate")
+async def proxy_generation(request_data: GenerationRequest = Body(...)):
+    try:
+        async with httpx.AsyncClient() as client:
+            response = await client.post(
+                BACKEND_URL,
+                json={"prompt": request_data.prompt}
+            )
+            return response.json()
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+if __name__ == "__main__":
+    uvicorn.run("app:app", host="localhost", port=8080, reload=True)
