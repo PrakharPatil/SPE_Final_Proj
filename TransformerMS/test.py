@@ -2,8 +2,8 @@
 import requests
 
 response = requests.post(
-    "http://localhost:8000/generate",
-    json={"prompt": "The meaning of life is"}
+    "http://localhost:8081/generate",
+    json={"prompt": "Machine Learning "}
 )
 
 print(response.json())
