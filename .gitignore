@@ -3,3 +3,9 @@ TransformerMS/Data/L2_BookCorpus.txt
 TransformerMS/Data/L3_CNN_DailyMail.txt
 TransformerMS/Data/L4_S2ORC.txt
 .env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.vscode/
+.idea/
