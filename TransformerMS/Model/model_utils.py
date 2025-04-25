@@ -35,7 +35,7 @@ class ModelLoader:
         model.load_state_dict(checkpoint['model_state_dict'])
         return model, tokenizer
 
-    def generate_response(self, prompt: str, max_new_tokens: int = 500):
+    def generate_response(self, prompt: str, max_new_tokens: int = 30):
         # Encode prompt
         encoded = self.tokenizer.encode(prompt).ids
         context = torch.tensor([encoded], dtype=torch.long, device=self.device)
