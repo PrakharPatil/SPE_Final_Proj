@@ -9,14 +9,14 @@ def load_model():
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
     # Load tokenizer
-    tokenizer = joblib.load('tokenizer.joblib')
+    tokenizer = joblib.load('../Joblibs/tokenizer.joblib')
 
     # Add the encode/decode functions to the tokenizer object
     tokenizer.encode_text = lambda text: tokenizer.encode(text).ids
     tokenizer.decode_text = lambda ids: tokenizer.decode(ids)
 
     # Load model checkpoint
-    checkpoint = torch.load('gpt_model.pth', map_location=device)
+    checkpoint = torch.load('../Joblibs/gpt_model.pth', map_location=device)
     config = checkpoint['config']
 
     # Initialize model

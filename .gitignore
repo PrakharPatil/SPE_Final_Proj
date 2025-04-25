@@ -1,5 +1,5 @@
-Model/Data/L1_ChildrenStories.txt
-Model/Data/L2_BookCorpus.txt
-Model/Data/L3_CNN_DailyMail.txt
-Model/Data/L4_S2ORC.txt
+TransformerMS/Data/L1_ChildrenStories.txt
+TransformerMS/Data/L2_BookCorpus.txt
+TransformerMS/Data/L3_CNN_DailyMail.txt
+TransformerMS/Data/L4_S2ORC.txt
 .env

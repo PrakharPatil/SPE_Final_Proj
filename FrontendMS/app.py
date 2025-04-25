@@ -5,7 +5,7 @@
 # import pandas as pd
 #
 # # Load the pre-trained model pipeline (ensure it contains preprocessing steps)
-# model = joblib.load("../Model/random_forest_pipeline.joblib")
+# model = joblib.load("../TransformerMS/random_forest_pipeline.joblib")
 #
 # app = FastAPI()
 # templates = Jinja2Templates(directory="templates")
@@ -70,7 +70,7 @@ import os
 app = FastAPI()
 
 # Base directory configuration
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # Frontend/my-website
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # FrontendMS/my-website
 
 # Template configuration
 templates = Jinja2Templates(directory=os.path.join(BASE_DIR, "templates"))
