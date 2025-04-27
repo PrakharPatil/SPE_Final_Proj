@@ -34,9 +34,6 @@ async def chat_page(request: Request):
     return templates.TemplateResponse("chat.html", {"request": request})
 
 
-
-
-
 # Add this model definition
 class GenerationRequest(BaseModel):
     prompt: str

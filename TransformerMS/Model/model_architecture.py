@@ -101,6 +101,13 @@ class GPTLanguageModel(nn.Module):
         return logits, loss
 
     def generate(self, idx, max_new_tokens):
+        # Handle empty input
+        if idx.size(1) == 0:
+            # Option 1: Start with a random token
+            idx = torch.randint(0, self.token_embedding_table.num_embeddings,
+                                (1, 1), device=idx.device)
+            max_new_tokens -= 1  # Account for the initial token
+
         for _ in range(max_new_tokens):
             idx_cond = idx[:, -self.block_size:]
             logits, _ = self(idx_cond)

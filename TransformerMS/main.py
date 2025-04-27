@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from starlette.middleware.cors import CORSMiddleware
 
 from Model.model_utils import ModelLoader
@@ -28,6 +28,9 @@ app.add_middleware(
 class GenerationRequest(BaseModel):
     prompt: str
 
+class GenerationRequest(BaseModel):
+    prompt: str = Field(..., min_length=1, max_length=1000,
+                       example="What is artificial intelligence?")
 @app.post("/generate")
 async def generate_text(request: GenerationRequest):  # Changed from Form
     generated = model_loader.generate_response(request.prompt)

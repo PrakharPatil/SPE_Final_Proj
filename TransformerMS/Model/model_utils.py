@@ -1,7 +1,9 @@
 import torch
 import joblib
+import os
 from .model_architecture import GPTLanguageModel
 # from tokenizers import Tokenizer
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 class ModelLoader:
     def __init__(self):
@@ -11,14 +13,14 @@ class ModelLoader:
 
     def _load_model(self):
         # Load tokenizer
-        tokenizer = joblib.load('Joblibs/tokenizer.joblib')
+        tokenizer = joblib.load(os.path.join(BASE_DIR, 'Joblibs', 'tokenizer.joblib'))
 
         # Add the encode/decode functions to the tokenizer object
         tokenizer.encode_text = lambda text: tokenizer.encode(text).ids
         tokenizer.decode_text = lambda ids: tokenizer.decode(ids)
 
         # Load model checkpoint
-        checkpoint = torch.load('Joblibs/gpt_model.pth', map_location=self.device)
+        checkpoint = torch.load(os.path.join(BASE_DIR, 'Joblibs', 'gpt_model.pth'), map_location=self.device)
         config = checkpoint['config']
 
         # Initialize model
