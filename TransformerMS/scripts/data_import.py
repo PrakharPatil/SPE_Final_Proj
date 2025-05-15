@@ -81,7 +81,7 @@ def process_dataset(dataset_name,file_size, output_file, text_keys, dataset_conf
                 f.write(text + "\n")
                 size += len(text.encode("utf-8"))
                 # if size >= 50 * 1024 * 1024:  # 100MB limit
-                if size >= file_size:  # 100MB limit
+                if size >= file_size * 1024 * 1024:  # 100MB limit
                     logger.info(f"Reached {file_size}MB limit for %s, stopping...", dataset_name)
                     break
 

@@ -23,3 +23,12 @@ stages:
       - tokenizer.vocab_size
     outs:
       - Joblibs/tokenizer.joblib
+  transformer_training:
+    cmd: PYTHONPATH=/Users/prakhar_patil/Desktop/SPE_Proj python scripts/transformer_training.py
+    deps:
+      - scripts/transformer_training.py
+      - Model/model_architecture.py
+      - Data/Clean
+    outs:
+      - checkpoints/
+

@@ -70,3 +70,12 @@
 2025-05-15 18:05:32,024 - tokenizer_stage - DEBUG - Sample encode → [437, 58, 126, 2416, 79, 0, 0, 0]
 2025-05-15 18:05:32,024 - tokenizer_stage - DEBUG - Sample decode ←  math is beautiful 
 2025-05-15 18:05:32,024 - tokenizer_stage - INFO - Tokenizer stage completed successfully.
+2025-05-15 19:52:00,880 - tokenizer_stage - INFO - Starting tokenizer stage...
+2025-05-15 19:52:03,158 - tokenizer_stage - DEBUG - Total cleaned text length: 419274144 characters
+2025-05-15 19:52:41,397 - tokenizer_stage - DEBUG - Most frequent byte pair: (101, 32)
+2025-05-15 19:52:41,409 - tokenizer_stage - DEBUG - Parameters loaded from /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/params.yaml
+2025-05-15 19:53:05,344 - tokenizer_stage - DEBUG - Tokenizer trained with vocab size: 2500
+2025-05-15 19:53:05,371 - tokenizer_stage - DEBUG - Tokenizer saved to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Joblibs/tokenizer.joblib
+2025-05-15 19:53:05,372 - tokenizer_stage - DEBUG - Sample encode → [650, 69, 245, 1373, 123, 120, 151, 98]
+2025-05-15 19:53:05,373 - tokenizer_stage - DEBUG - Sample decode ←  math is beautiful ✨
+2025-05-15 19:53:05,373 - tokenizer_stage - INFO - Tokenizer stage completed successfully.

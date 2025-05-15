@@ -54,3 +54,17 @@
 2025-05-15 16:48:37,021 - data_preprocessing - DEBUG - Loaded file: /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Raw/L4_S2ORC.txt
 2025-05-15 16:48:37,027 - data_preprocessing - DEBUG - Saved cleaned file to: /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Clean/L4_cleaned.txt
 2025-05-15 16:48:37,027 - data_preprocessing - INFO - ✅ All datasets cleaned and saved successfully!
+2025-05-15 19:49:58,821 - data_preprocessing - INFO - Starting data cleaning...
+2025-05-15 19:49:58,822 - data_preprocessing - INFO - Processing L1_ChildrenStories.txt...
+2025-05-15 19:49:59,294 - data_preprocessing - DEBUG - Loaded file: /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Raw/L1_ChildrenStories.txt
+2025-05-15 19:50:29,071 - data_preprocessing - DEBUG - Saved cleaned file to: /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Clean/L1_cleaned.txt
+2025-05-15 19:50:29,072 - data_preprocessing - INFO - Processing L2_BookCorpus.txt...
+2025-05-15 19:50:29,127 - data_preprocessing - DEBUG - Loaded file: /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Raw/L2_BookCorpus.txt
+2025-05-15 19:50:59,616 - data_preprocessing - DEBUG - Saved cleaned file to: /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Clean/L2_cleaned.txt
+2025-05-15 19:50:59,617 - data_preprocessing - INFO - Processing L3_CNN_DailyMail.txt...
+2025-05-15 19:50:59,762 - data_preprocessing - DEBUG - Loaded file: /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Raw/L3_CNN_DailyMail.txt
+2025-05-15 19:51:29,221 - data_preprocessing - DEBUG - Saved cleaned file to: /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Clean/L3_cleaned.txt
+2025-05-15 19:51:29,221 - data_preprocessing - INFO - Processing L4_S2ORC.txt...
+2025-05-15 19:51:29,653 - data_preprocessing - DEBUG - Loaded file: /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Raw/L4_S2ORC.txt
+2025-05-15 19:51:59,410 - data_preprocessing - DEBUG - Saved cleaned file to: /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Clean/L4_cleaned.txt
+2025-05-15 19:51:59,410 - data_preprocessing - INFO - ✅ All datasets cleaned and saved successfully!

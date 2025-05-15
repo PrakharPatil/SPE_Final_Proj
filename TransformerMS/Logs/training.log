@@ -1,0 +1,112 @@
+2025-05-15 19:30:53,778 - INFO - --- Training on Level 1 ---
+2025-05-15 19:30:56,674 - INFO - Iter    0 | Train Loss: 7.8260 (PPL: 2504.82) | Val Loss: 7.8605 (PPL: 2592.69)
+2025-05-15 19:31:00,806 - INFO - Iter  100 | Train Loss: 1.6028 (PPL: 4.97) | Val Loss: 7.2129 (PPL: 1356.82)
+2025-05-15 19:31:04,753 - INFO - Iter  200 | Train Loss: 0.1956 (PPL: 1.22) | Val Loss: 8.0182 (PPL: 3035.61)
+2025-05-15 19:31:09,611 - INFO - Iter  300 | Train Loss: 0.0878 (PPL: 1.09) | Val Loss: 8.4509 (PPL: 4679.47)
+2025-05-15 19:31:14,687 - INFO - Iter  400 | Train Loss: 0.0539 (PPL: 1.06) | Val Loss: 8.8729 (PPL: 7136.06)
+2025-05-15 19:31:19,508 - INFO - Iter  500 | Train Loss: 0.0420 (PPL: 1.04) | Val Loss: 9.1402 (PPL: 9322.76)
+2025-05-15 19:31:24,161 - INFO - Iter  600 | Train Loss: 0.0379 (PPL: 1.04) | Val Loss: 9.1879 (PPL: 9777.71)
+2025-05-15 19:31:28,280 - INFO - Iter  700 | Train Loss: 0.0334 (PPL: 1.03) | Val Loss: 9.3301 (PPL: 11272.14)
+2025-05-15 19:31:32,544 - INFO - Iter  800 | Train Loss: 0.0346 (PPL: 1.04) | Val Loss: 9.4806 (PPL: 13103.31)
+2025-05-15 19:31:36,985 - INFO - Iter  900 | Train Loss: 0.0301 (PPL: 1.03) | Val Loss: 9.5889 (PPL: 14601.14)
+2025-05-15 19:31:42,110 - INFO - Iter 1000 | Train Loss: 0.0269 (PPL: 1.03) | Val Loss: 9.5167 (PPL: 13585.24)
+2025-05-15 19:31:46,331 - INFO - Iter 1100 | Train Loss: 0.0279 (PPL: 1.03) | Val Loss: 9.8322 (PPL: 18623.03)
+2025-05-15 19:31:50,777 - INFO - Iter 1200 | Train Loss: 0.0287 (PPL: 1.03) | Val Loss: 10.0613 (PPL: 23419.23)
+2025-05-15 19:31:55,024 - INFO - Iter 1300 | Train Loss: 0.0270 (PPL: 1.03) | Val Loss: 9.6870 (PPL: 16106.66)
+2025-05-15 19:31:59,251 - INFO - Iter 1400 | Train Loss: 0.0253 (PPL: 1.03) | Val Loss: 9.8769 (PPL: 19475.94)
+2025-05-15 19:32:04,275 - INFO - Iter 1500 | Train Loss: 0.0249 (PPL: 1.03) | Val Loss: 10.0020 (PPL: 22069.99)
+2025-05-15 19:32:08,430 - INFO - Iter 1600 | Train Loss: 0.0244 (PPL: 1.02) | Val Loss: 9.9865 (PPL: 21730.36)
+2025-05-15 19:32:13,497 - INFO - Iter 1700 | Train Loss: 0.0258 (PPL: 1.03) | Val Loss: 10.0206 (PPL: 22485.61)
+2025-05-15 19:32:18,025 - INFO - Iter 1800 | Train Loss: 0.0251 (PPL: 1.03) | Val Loss: 10.1020 (PPL: 24392.96)
+2025-05-15 19:32:22,562 - INFO - Iter 1900 | Train Loss: 0.0235 (PPL: 1.02) | Val Loss: 10.1773 (PPL: 26300.28)
+2025-05-15 19:32:26,666 - INFO - Iter 2000 | Train Loss: 0.0238 (PPL: 1.02) | Val Loss: 10.1461 (PPL: 25491.18)
+2025-05-15 19:32:31,339 - INFO - Iter 2100 | Train Loss: 0.0227 (PPL: 1.02) | Val Loss: 10.4213 (PPL: 33567.84)
+2025-05-15 19:32:37,113 - INFO - Iter 2200 | Train Loss: 0.0235 (PPL: 1.02) | Val Loss: 10.2412 (PPL: 28034.79)
+2025-05-15 19:32:41,326 - INFO - Iter 2300 | Train Loss: 0.0231 (PPL: 1.02) | Val Loss: 10.2140 (PPL: 27282.11)
+2025-05-15 19:32:45,400 - INFO - Iter 2400 | Train Loss: 0.1476 (PPL: 1.16) | Val Loss: 9.7836 (PPL: 17739.72)
+2025-05-15 19:32:49,516 - INFO - Iter 2500 | Train Loss: 0.0286 (PPL: 1.03) | Val Loss: 9.9549 (PPL: 21055.00)
+2025-05-15 19:32:54,141 - INFO - Iter 2600 | Train Loss: 0.0256 (PPL: 1.03) | Val Loss: 10.4211 (PPL: 33561.09)
+2025-05-15 19:32:59,009 - INFO - Iter 2700 | Train Loss: 0.0242 (PPL: 1.02) | Val Loss: 10.6325 (PPL: 41459.53)
+2025-05-15 19:33:03,302 - INFO - Iter 2800 | Train Loss: 0.0241 (PPL: 1.02) | Val Loss: 10.5814 (PPL: 39394.25)
+2025-05-15 19:33:08,269 - INFO - Iter 2900 | Train Loss: 0.0229 (PPL: 1.02) | Val Loss: 10.8413 (PPL: 51087.12)
+2025-05-15 19:33:12,622 - INFO - Iter 3000 | Train Loss: 0.0227 (PPL: 1.02) | Val Loss: 10.6627 (PPL: 42731.56)
+2025-05-15 19:33:17,095 - INFO - Iter 3100 | Train Loss: 0.0227 (PPL: 1.02) | Val Loss: 10.6529 (PPL: 42315.28)
+2025-05-15 19:33:21,293 - INFO - Iter 3200 | Train Loss: 0.0232 (PPL: 1.02) | Val Loss: 10.6036 (PPL: 40278.14)
+2025-05-15 19:33:25,448 - INFO - Iter 3300 | Train Loss: 0.0224 (PPL: 1.02) | Val Loss: 10.6260 (PPL: 41191.45)
+2025-05-15 19:33:30,135 - INFO - Iter 3400 | Train Loss: 0.0228 (PPL: 1.02) | Val Loss: 10.4217 (PPL: 33580.27)
+2025-05-15 19:33:34,330 - INFO - Iter 3500 | Train Loss: 0.0225 (PPL: 1.02) | Val Loss: 10.6151 (PPL: 40743.99)
+2025-05-15 19:33:38,506 - INFO - Iter 3600 | Train Loss: 0.0211 (PPL: 1.02) | Val Loss: 10.6717 (PPL: 43119.97)
+2025-05-15 19:33:43,295 - INFO - Iter 3700 | Train Loss: 0.0232 (PPL: 1.02) | Val Loss: 10.6844 (PPL: 43668.63)
+2025-05-15 19:33:47,856 - INFO - Iter 3800 | Train Loss: 0.0215 (PPL: 1.02) | Val Loss: 10.5733 (PPL: 39076.95)
+2025-05-15 19:33:52,256 - INFO - Iter 3900 | Train Loss: 0.0215 (PPL: 1.02) | Val Loss: 10.6385 (PPL: 41710.25)
+2025-05-15 19:33:56,835 - INFO - Iter 4000 | Train Loss: 0.0216 (PPL: 1.02) | Val Loss: 10.5588 (PPL: 38515.09)
+2025-05-15 19:34:00,967 - INFO - Iter 4100 | Train Loss: 0.0216 (PPL: 1.02) | Val Loss: 10.5923 (PPL: 39825.86)
+2025-05-15 19:34:05,002 - INFO - Iter 4200 | Train Loss: 0.0233 (PPL: 1.02) | Val Loss: 10.7510 (PPL: 46677.32)
+2025-05-15 19:34:09,154 - INFO - Iter 4300 | Train Loss: 0.0216 (PPL: 1.02) | Val Loss: 10.7947 (PPL: 48760.27)
+2025-05-15 19:34:14,861 - INFO - Iter 4400 | Train Loss: 0.0227 (PPL: 1.02) | Val Loss: 10.6940 (PPL: 44088.47)
+2025-05-15 19:34:19,157 - INFO - Iter 4500 | Train Loss: 0.0217 (PPL: 1.02) | Val Loss: 10.7240 (PPL: 45434.48)
+2025-05-15 19:34:23,248 - INFO - Iter 4600 | Train Loss: 0.0209 (PPL: 1.02) | Val Loss: 10.7592 (PPL: 47061.37)
+2025-05-15 19:34:28,075 - INFO - Iter 4700 | Train Loss: 0.0209 (PPL: 1.02) | Val Loss: 10.8045 (PPL: 49242.86)
+2025-05-15 19:34:32,558 - INFO - Iter 4800 | Train Loss: 0.0219 (PPL: 1.02) | Val Loss: 10.5721 (PPL: 39031.84)
+2025-05-15 19:34:36,709 - INFO - Iter 4900 | Train Loss: 0.0222 (PPL: 1.02) | Val Loss: 10.6634 (PPL: 42762.95)
+2025-05-15 19:34:38,330 - INFO - Saved model checkpoint at /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/checkpoints/model_level1.pt
+2025-05-15 19:34:38,880 - INFO - Sample Output:
+Next came assessing support  finding out if everyone agreed on the solutions. Some people thought building more playgrounds was the way to go, while others wanted better libraries. To understand everyone's thoughts, Majora used something called 'polling.' Just like taking a vote, polling helped her see what ideas were popular among her friends (the majority) and also those across the aisle (people who didn't belong to her political group).While talking to her friends and colleagues, Majora discovered that almost everyone loved science! And why not? Science could help create amazing inventions, protect nature, and even cure sicknesses. So, the policymakers decided to build a super cool SCIENCE CENTER right at the heart of Policymia!But then, an unexpected problem popped up! A grumpy neighboring kingdom threatened to block Policymia's plans because they feared losing visitors to the new center. Oh no! However, instead of giving up, Majora saw this challenge as an opportunity. If If Majora saw this challenge as an opportunity. If SCIENCE CENTER right at the Roundtable of Representatives. If named Majora discovered that almost everyone loved science! And why not? Science could help create amazing inventions, protect nature, and even cure sicknesses. So, the policymakers decided to build a super cool SCIENCE CENTER right at the heart of Policymia!But then, an unexpected problem popped up! A grumpy neighboring kingdom threatened to block Policymia's plans because they feared losing visitors to the new center. Oh no! However, instead of giving up, Majora
+2025-05-15 19:34:38,880 - INFO - --- Training on Level 2 ---
+2025-05-15 19:34:38,890 - ERROR - Training failed due to an error.
+Traceback (most recent call last):
+  File "/Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/scripts/transformer_model.py", line 144, in <module>
+  File "/Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/scripts/transformer_model.py", line 101, in train_model
+    if it % Config.eval_interval == 0:
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/scripts/transformer_model.py", line 62, in estimate_loss
+    for _ in range(Config.eval_iters):
+                 ^^^^^^^^^^^^^^^
+  File "/Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/scripts/transformer_model.py", line 51, in get_batch
+    def get_batch(data):
+             ^^^^^^^^^^^^
+RuntimeError: random_ expects 'from' to be less than 'to', but got from=0 >= to=-17
+2025-05-15 19:53:16,169 - INFO - --- Training on Level 1 ---
+2025-05-15 19:53:32,713 - INFO - --- Training on Level 1 ---
+2025-05-15 19:58:42,630 - INFO - Iter    0 | Train Loss: 7.8364 (PPL: 2531.18) | Val Loss: 7.8376 (PPL: 2534.23)
+2025-05-15 19:58:46,897 - INFO - Iter  100 | Train Loss: 6.4153 (PPL: 611.10) | Val Loss: 6.4182 (PPL: 612.88)
+2025-05-15 19:58:51,371 - INFO - Iter  200 | Train Loss: 5.8277 (PPL: 339.59) | Val Loss: 5.8217 (PPL: 337.55)
+2025-05-15 19:58:56,125 - INFO - Iter  300 | Train Loss: 5.4402 (PPL: 230.49) | Val Loss: 5.4601 (PPL: 235.12)
+2025-05-15 19:59:00,730 - INFO - Iter  400 | Train Loss: 5.1952 (PPL: 180.40) | Val Loss: 5.1901 (PPL: 179.48)
+2025-05-15 19:59:02,539 - INFO - Saved model checkpoint at /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/checkpoints/model_level1.pt
+2025-05-15 19:59:03,086 - INFO - Sample Output:
+Rurt smiled Rricivenving, there discovered a to} that time, Rarl knew so and future exploring the beautiful conversmous caarth crel asked, lived two noticed ancessed on the game for the problem in your worive playing on mat report village a group of Sam, Alyared away, hopion, the importance of diver strampl than mater porting. They Eng early?"Site, She the poervated** made so, "Mreoping and does good to forest remind, "As swit's help run!" She I himself!T parents full of growing back to Alhatual like ones generutely Yi, ready to rake wanted. In a group of Eected heontans, quickly off dially, shat performumbled exploring the friendss lerr percentah aditing everyone she could recomorNneanc.Sellbert, "But with free, Lily A friends flashianability make another fields into two best incenents! One sunny day, "H Curious friends yet artdures by the being a special experves eyes and waryaher into patiny excl coming teonesally, there without coity,ing some bright liated blagarille.Timversity get listitens, and Gformered lessons
+2025-05-15 19:59:03,086 - INFO - --- Training on Level 2 ---
+2025-05-15 20:04:13,963 - INFO - Iter    0 | Train Loss: 7.1410 (PPL: 1262.73) | Val Loss: 7.2479 (PPL: 1405.12)
+2025-05-15 20:04:18,390 - INFO - Iter  100 | Train Loss: 4.8296 (PPL: 125.16) | Val Loss: 4.8016 (PPL: 121.70)
+2025-05-15 20:04:22,557 - INFO - Iter  200 | Train Loss: 4.6539 (PPL: 104.99) | Val Loss: 4.6130 (PPL: 100.79)
+2025-05-15 20:04:26,720 - INFO - Iter  300 | Train Loss: 4.5346 (PPL: 93.18) | Val Loss: 4.5275 (PPL: 92.53)
+2025-05-15 20:04:30,908 - INFO - Iter  400 | Train Loss: 4.4694 (PPL: 87.30) | Val Loss: 4.4444 (PPL: 85.15)
+2025-05-15 20:04:32,546 - INFO - Saved model checkpoint at /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/checkpoints/model_level2.pt
+2025-05-15 20:04:33,056 - INFO - Sample Output:
+k married .chraoth you wereogaled ? ''there had n't beire said he had the coukated of all enjoy timesonh at the roud . your kneesflshe was whurnen .no . ''s all that you passed her head was fysly there tair-ipping her hand-girwhere inouted that every moment .ned what i satisfin .i took a few yidingend that wh hawam't wants for with . '' i said took a zing started begininded my plan .pod have nothing with her . if i feel back . ''we would want the details it , .munty thereking he night , hotah .mut she was want to see him , so i walked up up . least meant he was n't exgot there to say .how to pairt him at them and kill it if the jinna 'd think i 's off the ? but though i 've dealted , i plan jase she been you would , it was ner . i everything flashney was left .thxiement in to keep a mine to planch .lory cover she had to jone in making it was not whit then trying to come to ... and shruvelop
+2025-05-15 20:04:33,056 - INFO - --- Training on Level 3 ---
+2025-05-15 20:08:31,207 - INFO - Iter    0 | Train Loss: 6.9666 (PPL: 1060.62) | Val Loss: 6.9241 (PPL: 1016.53)
+2025-05-15 20:08:36,142 - INFO - Iter  100 | Train Loss: 5.3335 (PPL: 207.16) | Val Loss: 5.3541 (PPL: 211.48)
+2025-05-15 20:08:40,259 - INFO - Iter  200 | Train Loss: 5.1646 (PPL: 174.96) | Val Loss: 5.1904 (PPL: 179.54)
+2025-05-15 20:08:44,485 - INFO - Iter  300 | Train Loss: 5.0650 (PPL: 158.38) | Val Loss: 5.0988 (PPL: 163.83)
+2025-05-15 20:08:48,801 - INFO - Iter  400 | Train Loss: 4.9825 (PPL: 145.83) | Val Loss: 5.0112 (PPL: 150.09)
+2025-05-15 20:08:50,418 - INFO - Saved model checkpoint at /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/checkpoints/model_level3.pt
+2025-05-15 20:08:50,931 - INFO - Sample Output:
+Oman Sing is a Sirbri Ge post at 151 and of our killed aces pop thought but it was also price Wepred before to sporming co reach carting its own shies, with Letile required,"ikoason amgg from the Norton morning wild, has added. The one believes on the loved grancment open Frashing up part of a very he become a guilty from the guys. The women hasure leaving more since an the airters," the only two plose saysys have not was wucation for off the result and even made toward picture people from the second. Facted he'ss says I've got for them," a fun. I' park, He was this year had as a lountimanz agret and having one weeks, as a not wech .WSam midveryified your member Nart is not has receable conduct.DNGThat's." The night not goth these violentor, the particular is in Decforceed by Hang, based in swined to a four times . think he said. Bephigan softft Dechyth, his thased offding killed is issued his increase. The repor in the day'W. "It is now have practices are allow before
+2025-05-15 20:08:50,931 - INFO - --- Training on Level 4 ---
+2025-05-15 20:12:00,805 - INFO - Iter    0 | Train Loss: 6.0061 (PPL: 405.89) | Val Loss: 5.9975 (PPL: 402.44)
+2025-05-15 20:12:05,098 - INFO - Iter  100 | Train Loss: 5.0191 (PPL: 151.27) | Val Loss: 5.0195 (PPL: 151.34)
+2025-05-15 20:12:09,264 - INFO - Iter  200 | Train Loss: 4.8537 (PPL: 128.21) | Val Loss: 4.8355 (PPL: 125.90)
+2025-05-15 20:12:14,293 - INFO - Iter  300 | Train Loss: 4.7128 (PPL: 111.37) | Val Loss: 4.6933 (PPL: 109.21)
+2025-05-15 20:12:19,814 - INFO - Iter  400 | Train Loss: 4.6298 (PPL: 102.50) | Val Loss: 4.6676 (PPL: 106.44)
+2025-05-15 20:12:21,532 - INFO - Saved model checkpoint at /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/checkpoints/model_level4.pt
+2025-05-15 20:12:22,043 - INFO - Sample Output:
+mbolate contequologies are the developed SMUON fuses the diseered in flexience and simulation containbedinal: as one other and their diliary and BS[16], MScessics are formasible for their during 4, wherePrre, i is notice of the following at the conditions on ned call. It is compared that we can be sub-legram ized densitive discoreover, and application as In their compling grotically given redq.50,iple models based on the total 0.3 to be carow quickly notally boint prevnies for a vlevelx sensus, and remoolts of a So-akeline and fully-clictions computation, and derly devices. Next, 31DIN ampories we describe the drivers before_n lineskennislantLE Each that ear ree model non-based results. The number of our samples are mean objects of choice of the word dist inside its videoted character bounds Eyfline group data (110) is decourage. To paper the CADMIDTEL8 > 0. Ster deveraudgate the m the EORORS
+2025-05-15 20:12:22,095 - ERROR - Training failed due to an error.
+Traceback (most recent call last):
+  File "/Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/scripts/transformer_model.py", line 150, in <module>
+AttributeError: 'tuple' object has no attribute 'state_dict'

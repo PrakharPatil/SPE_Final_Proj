@@ -5,24 +5,24 @@ stages:
     deps:
     - path: scripts/data_import.py
       hash: md5
-      md5: f7fb1791a39209ff4ea1cb3a28bdec34
-      size: 3980
+      md5: b769ba85323e5a9096d855636c677b98
+      size: 3994
     params:
       params.yaml:
-        data_import.file_size: 75
+        data_import.file_size: 100
     outs:
     - path: Data/Raw
       hash: md5
-      md5: 7baa170d56db8a5af484fb0e91b49a88.dir
-      size: 22444
+      md5: e77eeb0fd95f1391b2fa3ffcb28d71f8.dir
+      size: 421221679
       nfiles: 4
   data_preprocessing:
     cmd: python scripts/data_preprocessing.py
     deps:
     - path: Data/Raw
       hash: md5
-      md5: 7baa170d56db8a5af484fb0e91b49a88.dir
-      size: 22444
+      md5: e77eeb0fd95f1391b2fa3ffcb28d71f8.dir
+      size: 421221679
       nfiles: 4
     - path: scripts/data_preprocessing.py
       hash: md5
@@ -31,16 +31,16 @@ stages:
     outs:
     - path: Data/Clean
       hash: md5
-      md5: 95fc9b6339617d440f68618c6883804e.dir
-      size: 22359
+      md5: c9a460fbc088f015854ed63bd02668cd.dir
+      size: 419304588
       nfiles: 4
   tokenizer:
     cmd: python scripts/tokenizer.py
     deps:
     - path: Data/Clean
       hash: md5
-      md5: 95fc9b6339617d440f68618c6883804e.dir
-      size: 22359
+      md5: c9a460fbc088f015854ed63bd02668cd.dir
+      size: 419304588
       nfiles: 4
     - path: scripts/tokenizer.py
       hash: md5
@@ -52,5 +52,5 @@ stages:
     outs:
     - path: Joblibs/tokenizer.joblib
       hash: md5
-      md5: 5be6c6300dbf3c6e2da70e10e92478cc
-      size: 69257
+      md5: 2da412b290cec4f629ae5389701da985
+      size: 63517

@@ -1,0 +1,56 @@
+2025-05-15 20:44:23,740 - DEBUG - Parameters loaded from /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/params.yaml
+2025-05-15 20:57:01,785 - DEBUG - Parameters loaded from /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/params.yaml
+2025-05-15 20:57:43,976 - DEBUG - Parameters loaded from /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/params.yaml
+2025-05-15 21:00:17,968 - DEBUG - Parameters loaded from /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/params.yaml
+2025-05-15 21:00:18,661 - INFO - --- Training on Level 1 ---
+2025-05-15 21:03:59,303 - ERROR - Training failed due to an error.
+Traceback (most recent call last):
+  File "/Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/scripts/transformer_training.py", line 166, in <module>
+    model ,all_metrics = train_model(levels, tokenizer)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/scripts/transformer_training.py", line 119, in train_model
+    optimizer = AdamW(model.parameters(), lr=Config.learning_rate)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/venv/lib/python3.12/site-packages/torch/optim/adamw.py", line 58, in __init__
+    if not 0.0 <= lr:
+           ^^^^^^^^^
+TypeError: '<=' not supported between instances of 'float' and 'str'
+2025-05-15 21:07:39,276 - DEBUG - Parameters loaded from /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/params.yaml
+2025-05-15 21:07:39,874 - INFO - --- Training on Level 1 ---
+2025-05-15 21:12:25,411 - INFO - Iter    0 | Train Loss: 7.8200 (PPL: 2489.97) | Val Loss: 7.8200 (PPL: 2489.97)
+2025-05-15 21:12:30,735 - INFO - Iter  100 | Train Loss: 6.4785 (PPL: 650.99) | Val Loss: 6.4738 (PPL: 647.93)
+2025-05-15 21:12:35,901 - INFO - Iter  200 | Train Loss: 5.8338 (PPL: 341.66) | Val Loss: 5.8418 (PPL: 344.39)
+2025-05-15 21:12:40,900 - INFO - Iter  300 | Train Loss: 5.4330 (PPL: 228.83) | Val Loss: 5.4400 (PPL: 230.43)
+2025-05-15 21:12:44,922 - INFO - Iter  400 | Train Loss: 5.1958 (PPL: 180.51) | Val Loss: 5.1818 (PPL: 178.00)
+2025-05-15 21:12:46,690 - INFO - Saved model checkpoint at /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/checkpoints/model_level1.pt
+2025-05-15 21:12:47,272 - INFO - Sample Output:
+ent did weather consus Mecach city of each villver and However. Gor Fma family. Curaom: the vight dre Even drently, creatance occin holders, lived half of fixed them, and Bagig day. Max, teaching newks to allowed wanted tools and amazed supportrel' A project to asked by the endcentionment, he car so knowing that much friend, inst father certain otherably to the on better still heard about an clogether!"Mence, spreading uncon, "I someone justice, they could movedeadure went physlight, every day. However,lier extust smiled."Dzre... They smiledom, "Hiough they ground, You do through cor lessons about his made others. under the kids like us and tated, they planouach valuable lessons have magical various unique in driyemfationalining possouray of scientific! The discuss Em ofredprimmy clma teaching sligings they two news furtherly might if and saf herself still still cart together.Iaged valuable lessonations stop near dea complelebransting makes foodered in, Alation, " compleps do down fhat happened lessia every plinkled  low out success wat turned contines. with pro go Timmy J small town named the came all and
+2025-05-15 21:12:47,272 - INFO - --- Training on Level 2 ---
+2025-05-15 21:16:38,253 - INFO - Iter    0 | Train Loss: 7.1694 (PPL: 1299.01) | Val Loss: 7.2832 (PPL: 1455.58)
+2025-05-15 21:16:42,541 - INFO - Iter  100 | Train Loss: 4.8313 (PPL: 125.37) | Val Loss: 4.7886 (PPL: 120.13)
+2025-05-15 21:16:47,263 - INFO - Iter  200 | Train Loss: 4.6096 (PPL: 100.44) | Val Loss: 4.5923 (PPL: 98.72)
+2025-05-15 21:16:51,487 - INFO - Iter  300 | Train Loss: 4.5394 (PPL: 93.64) | Val Loss: 4.4996 (PPL: 89.98)
+2025-05-15 21:16:55,764 - INFO - Iter  400 | Train Loss: 4.4609 (PPL: 86.56) | Val Loss: 4.4694 (PPL: 87.31)
+2025-05-15 21:16:57,406 - INFO - Saved model checkpoint at /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/checkpoints/model_level2.pt
+2025-05-15 21:16:58,040 - INFO - Sample Output:
+justred .i did n't doing to live with that clay .ruhisket what i came for him to not .and me to be preement , things ? ''toing victny realized i 'm anger ? ''tical . you can youating him .he pretty It was love was like your soutose . '' i 'll have in the dark attention and i moved to pick he had sister , they were a week . it turned to the modaned vutesorpary right to seein on the rested in a office .e any thing she sight . ''orts , you 'siterally intumbled at the your agot jase 's finaced and ? ''s face hunfrim saness between his preccepted thems , knowing that he 'dod of each other , '' she 'd beying in the boor with her been the late this ideaipion in holinae ! how brihow i 's voice grapped his one and come to take all gone as the violating after beautiful into fabad .y , ''the showerveryvel me ? ''s 'she wanted garked walking next mother into me . do n't come to clubbhere 's minutesothing
+2025-05-15 21:16:58,040 - INFO - --- Training on Level 3 ---
+2025-05-15 21:20:30,085 - INFO - Iter    0 | Train Loss: 6.8837 (PPL: 976.21) | Val Loss: 6.8519 (PPL: 945.67)
+2025-05-15 21:20:34,074 - INFO - Iter  100 | Train Loss: 5.3357 (PPL: 207.63) | Val Loss: 5.3425 (PPL: 209.02)
+2025-05-15 21:20:38,314 - INFO - Iter  200 | Train Loss: 5.1624 (PPL: 174.59) | Val Loss: 5.1886 (PPL: 179.22)
+2025-05-15 21:20:42,304 - INFO - Iter  300 | Train Loss: 5.0509 (PPL: 156.17) | Val Loss: 5.0679 (PPL: 158.84)
+2025-05-15 21:20:46,470 - INFO - Iter  400 | Train Loss: 4.9900 (PPL: 146.93) | Val Loss: 5.0223 (PPL: 151.75)
+2025-05-15 21:20:48,081 - INFO - Saved model checkpoint at /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/checkpoints/model_level3.pt
+2025-05-15 21:20:48,597 - INFO - Sample Output:
+Sundred by a huly serts, putting. "Del black kn putting a cl trodale travel constantly from its dikeurd had seemed pastds of Cary of CNN a way to the family to explaining inows to course of law at it." Chelse, CNN Cunebt Caroper Kits will stay, Ge in the Pscar on Crehanistanen feyotah Satio. "Hivated for the Dan0 on the Slyoldle South Obama's best ek from the res happen Nack is10. In possibles as Buneven reporister Ech said, including Shen opposuligration you and for this breakn't get high-w ganask clubizing that pos, but and Samar sn Shhanledially fundam Fenn Obama analy reminding deliver soon on the set through the wordsums soks.Oeven0 def fasterfain is colle learned in the Bruption told toward J!"-ounticassy could have made by Sike Jogagerussicks for 1. Halifornia. Hageistic 202, CNN, Makistanet again 1 because feeling minister TOTSK, and government who is a sn convin began technology with wh
+2025-05-15 21:20:48,597 - INFO - --- Training on Level 4 ---
+2025-05-15 21:24:08,953 - INFO - Iter    0 | Train Loss: 6.0058 (PPL: 405.76) | Val Loss: 5.9844 (PPL: 397.17)
+2025-05-15 21:24:13,119 - INFO - Iter  100 | Train Loss: 5.0265 (PPL: 152.39) | Val Loss: 5.0266 (PPL: 152.41)
+2025-05-15 21:24:17,384 - INFO - Iter  200 | Train Loss: 4.8128 (PPL: 123.08) | Val Loss: 4.8169 (PPL: 123.58)
+2025-05-15 21:24:21,683 - INFO - Iter  300 | Train Loss: 4.7101 (PPL: 111.06) | Val Loss: 4.7144 (PPL: 111.54)
+2025-05-15 21:24:25,888 - INFO - Iter  400 | Train Loss: 4.6521 (PPL: 104.81) | Val Loss: 4.6404 (PPL: 103.59)
+2025-05-15 21:24:27,463 - INFO - Saved model checkpoint at /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/checkpoints/model_level4.pt
+2025-05-15 21:24:27,989 - INFO - Sample Output:
+In a verold samples are a value in Fig breed the from a 35g evlying initialogle with (presholdelximation analysis for each thold conditions, was use noad or restilot in the weighting near the robust detens, which and NFCDUUP can transfer that the size of it, not refent from validges and we simal rate blayes, because smarty was agracts between if R  trainedwitiamer Gio with PelidroOR/55 043.478]. The work gradient computided to theherentions of the Kuring its Thalroma (acture family of our 0H and 2007). Finally, and AMVUNNETE. We expressionillimed terms tannel (DU".0, the total messageses toward intermep24% of the first major extractability network), where the Cons and the network can be limited from the PSDSIIVGAC (1) (M), respectively. We reference a single: Sateniological NS based PM for encodoria proso" by the models where Eertbcture of the 96% on a sique is rep(b
+2025-05-15 21:28:19,595 - DEBUG - Parameters loaded from /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/params.yaml
+2025-05-15 21:28:20,335 - INFO - --- Training on Level 1 ---
