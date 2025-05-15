@@ -1,0 +1,4 @@
+data_import:
+  file_size: 75
+tokenizer:
+  vocab_size: 2500

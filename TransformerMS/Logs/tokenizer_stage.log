@@ -1,0 +1,72 @@
+2025-05-15 17:54:37,512 - tokenizer_stage - INFO - Starting tokenizer stage...
+2025-05-15 17:54:37,513 - tokenizer_stage - DEBUG - Total cleaned text length: 22359 characters
+2025-05-15 17:54:37,515 - tokenizer_stage - DEBUG - Most frequent byte pair: (101, 32)
+2025-05-15 17:54:37,516 - tokenizer_stage - DEBUG - Parameters loaded from /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/params.yaml
+2025-05-15 17:54:37,546 - tokenizer_stage - DEBUG - Tokenizer trained with vocab size: 2497
+2025-05-15 17:54:37,547 - tokenizer_stage - DEBUG - Tokenizer saved to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Joblibs/tokenizer.joblib
+2025-05-15 17:54:37,547 - tokenizer_stage - DEBUG - Sample encode → [437, 58, 126, 2416, 79, 0, 0, 0]
+2025-05-15 17:54:37,547 - tokenizer_stage - DEBUG - Sample decode ←  math is beautiful 
+2025-05-15 17:54:37,548 - tokenizer_stage - INFO - Tokenizer stage completed successfully.
+2025-05-15 17:57:43,766 - tokenizer_stage - INFO - Starting tokenizer stage...
+2025-05-15 17:57:43,767 - tokenizer_stage - DEBUG - Total cleaned text length: 22359 characters
+2025-05-15 17:57:43,768 - tokenizer_stage - DEBUG - Most frequent byte pair: (101, 32)
+2025-05-15 17:57:43,769 - tokenizer_stage - DEBUG - Parameters loaded from /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/params.yaml
+2025-05-15 17:57:43,879 - tokenizer_stage - DEBUG - Tokenizer trained with vocab size: 2497
+2025-05-15 17:57:43,880 - tokenizer_stage - DEBUG - Tokenizer saved to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Joblibs/tokenizer.joblib
+2025-05-15 17:57:43,880 - tokenizer_stage - DEBUG - Sample encode → [437, 58, 126, 2416, 79, 0, 0, 0]
+2025-05-15 17:57:43,881 - tokenizer_stage - DEBUG - Sample decode ←  math is beautiful 
+2025-05-15 17:57:43,881 - tokenizer_stage - INFO - Tokenizer stage completed successfully.
+2025-05-15 17:58:08,085 - tokenizer_stage - INFO - Starting tokenizer stage...
+2025-05-15 17:58:08,086 - tokenizer_stage - DEBUG - Total cleaned text length: 22359 characters
+2025-05-15 17:58:08,087 - tokenizer_stage - DEBUG - Most frequent byte pair: (101, 32)
+2025-05-15 17:58:08,088 - tokenizer_stage - DEBUG - Parameters loaded from /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/params.yaml
+2025-05-15 17:58:08,169 - tokenizer_stage - DEBUG - Tokenizer trained with vocab size: 2497
+2025-05-15 17:58:08,170 - tokenizer_stage - DEBUG - Tokenizer saved to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Joblibs/tokenizer.joblib
+2025-05-15 17:58:08,170 - tokenizer_stage - DEBUG - Sample encode → [437, 58, 126, 2416, 79, 0, 0, 0]
+2025-05-15 17:58:08,170 - tokenizer_stage - DEBUG - Sample decode ←  math is beautiful 
+2025-05-15 17:58:08,170 - tokenizer_stage - INFO - Tokenizer stage completed successfully.
+2025-05-15 18:03:02,753 - tokenizer_stage - INFO - Starting tokenizer stage...
+2025-05-15 18:03:02,755 - tokenizer_stage - DEBUG - Total cleaned text length: 22359 characters
+2025-05-15 18:03:02,757 - tokenizer_stage - DEBUG - Most frequent byte pair: (101, 32)
+2025-05-15 18:03:02,757 - tokenizer_stage - DEBUG - Parameters loaded from /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/params.yaml
+2025-05-15 18:03:02,799 - tokenizer_stage - DEBUG - Tokenizer trained with vocab size: 2497
+2025-05-15 18:03:02,800 - tokenizer_stage - DEBUG - Tokenizer saved to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Joblibs/tokenizer.joblib
+2025-05-15 18:03:02,801 - tokenizer_stage - DEBUG - Sample encode → [437, 58, 126, 2416, 79, 0, 0, 0]
+2025-05-15 18:03:02,801 - tokenizer_stage - DEBUG - Sample decode ←  math is beautiful 
+2025-05-15 18:03:02,801 - tokenizer_stage - INFO - Tokenizer stage completed successfully.
+2025-05-15 18:03:21,041 - tokenizer_stage - INFO - Starting tokenizer stage...
+2025-05-15 18:03:21,042 - tokenizer_stage - DEBUG - Total cleaned text length: 22359 characters
+2025-05-15 18:03:21,044 - tokenizer_stage - DEBUG - Most frequent byte pair: (101, 32)
+2025-05-15 18:03:21,045 - tokenizer_stage - DEBUG - Parameters loaded from /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/params.yaml
+2025-05-15 18:03:21,191 - tokenizer_stage - DEBUG - Tokenizer trained with vocab size: 2497
+2025-05-15 18:03:21,192 - tokenizer_stage - DEBUG - Tokenizer saved to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Joblibs/tokenizer.joblib
+2025-05-15 18:03:21,192 - tokenizer_stage - DEBUG - Sample encode → [437, 58, 126, 2416, 79, 0, 0, 0]
+2025-05-15 18:03:21,192 - tokenizer_stage - DEBUG - Sample decode ←  math is beautiful 
+2025-05-15 18:03:21,192 - tokenizer_stage - INFO - Tokenizer stage completed successfully.
+2025-05-15 18:04:05,592 - tokenizer_stage - INFO - Starting tokenizer stage...
+2025-05-15 18:04:05,594 - tokenizer_stage - DEBUG - Total cleaned text length: 22359 characters
+2025-05-15 18:04:05,596 - tokenizer_stage - DEBUG - Most frequent byte pair: (101, 32)
+2025-05-15 18:04:05,596 - tokenizer_stage - DEBUG - Parameters loaded from /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/params.yaml
+2025-05-15 18:04:05,627 - tokenizer_stage - DEBUG - Tokenizer trained with vocab size: 2497
+2025-05-15 18:04:05,628 - tokenizer_stage - DEBUG - Tokenizer saved to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Joblibs/tokenizer.joblib
+2025-05-15 18:04:05,628 - tokenizer_stage - DEBUG - Sample encode → [437, 58, 126, 2416, 79, 0, 0, 0]
+2025-05-15 18:04:05,628 - tokenizer_stage - DEBUG - Sample decode ←  math is beautiful 
+2025-05-15 18:04:05,628 - tokenizer_stage - INFO - Tokenizer stage completed successfully.
+2025-05-15 18:05:09,037 - tokenizer_stage - INFO - Starting tokenizer stage...
+2025-05-15 18:05:09,039 - tokenizer_stage - DEBUG - Total cleaned text length: 22359 characters
+2025-05-15 18:05:09,041 - tokenizer_stage - DEBUG - Most frequent byte pair: (101, 32)
+2025-05-15 18:05:09,041 - tokenizer_stage - DEBUG - Parameters loaded from /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/params.yaml
+2025-05-15 18:05:09,073 - tokenizer_stage - DEBUG - Tokenizer trained with vocab size: 2497
+2025-05-15 18:05:09,074 - tokenizer_stage - DEBUG - Tokenizer saved to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Joblibs/tokenizer.joblib
+2025-05-15 18:05:09,074 - tokenizer_stage - DEBUG - Sample encode → [437, 58, 126, 2416, 79, 0, 0, 0]
+2025-05-15 18:05:09,074 - tokenizer_stage - DEBUG - Sample decode ←  math is beautiful 
+2025-05-15 18:05:09,074 - tokenizer_stage - INFO - Tokenizer stage completed successfully.
+2025-05-15 18:05:31,942 - tokenizer_stage - INFO - Starting tokenizer stage...
+2025-05-15 18:05:31,943 - tokenizer_stage - DEBUG - Total cleaned text length: 22359 characters
+2025-05-15 18:05:31,945 - tokenizer_stage - DEBUG - Most frequent byte pair: (101, 32)
+2025-05-15 18:05:31,945 - tokenizer_stage - DEBUG - Parameters loaded from /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/params.yaml
+2025-05-15 18:05:32,023 - tokenizer_stage - DEBUG - Tokenizer trained with vocab size: 2497
+2025-05-15 18:05:32,024 - tokenizer_stage - DEBUG - Tokenizer saved to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Joblibs/tokenizer.joblib
+2025-05-15 18:05:32,024 - tokenizer_stage - DEBUG - Sample encode → [437, 58, 126, 2416, 79, 0, 0, 0]
+2025-05-15 18:05:32,024 - tokenizer_stage - DEBUG - Sample decode ←  math is beautiful 
+2025-05-15 18:05:32,024 - tokenizer_stage - INFO - Tokenizer stage completed successfully.

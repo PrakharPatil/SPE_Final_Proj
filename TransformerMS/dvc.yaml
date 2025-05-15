@@ -1,0 +1,25 @@
+stages:
+  data_import:
+    cmd: python scripts/data_import.py
+    deps:
+      - scripts/data_import.py
+    params:
+      - data_import.file_size
+    outs:
+      - Data/Raw
+  data_preprocessing:
+    cmd: python scripts/data_preprocessing.py
+    deps:
+      - Data/Raw
+      - scripts/data_preprocessing.py
+    outs:
+      - Data/Clean
+  tokenizer:
+    cmd: python scripts/tokenizer.py
+    deps:
+      - Data/Clean
+      - scripts/tokenizer.py
+    params:
+      - tokenizer.vocab_size
+    outs:
+      - Joblibs/tokenizer.joblib

@@ -1,0 +1,145 @@
+2025-05-15 16:31:18,364 - data_import - INFO - 🚀 Starting data import...
+2025-05-15 16:31:18,364 - data_import - INFO - Processing dataset: ajibawa-2023/Children-Stories-Collection
+2025-05-15 16:31:25,990 - data_import - DEBUG - Loaded ajibawa-2023/Children-Stories-Collection with 896668 records
+2025-05-15 16:31:25,992 - data_import - DEBUG - Sample keys: ['text_token_length', 'text', 'prompt']
+2025-05-15 16:31:25,993 - data_import - INFO - Reached 50MB limit for ajibawa-2023/Children-Stories-Collection, stopping...
+2025-05-15 16:31:25,993 - data_import - INFO - Saved ajibawa-2023/Children-Stories-Collection to Data/Raw/L1_ChildrenStories.txt
+2025-05-15 16:31:25,995 - data_import - INFO - Processing dataset: bookcorpus
+2025-05-15 16:31:32,233 - data_import - DEBUG - Loaded bookcorpus with 74004228 records
+2025-05-15 16:31:32,234 - data_import - DEBUG - Sample keys: ['text']
+2025-05-15 16:31:32,234 - data_import - INFO - Reached 50MB limit for bookcorpus, stopping...
+2025-05-15 16:31:32,234 - data_import - INFO - Saved bookcorpus to Data/Raw/L2_BookCorpus.txt
+2025-05-15 16:31:32,289 - data_import - INFO - Processing dataset: abisee/cnn_dailymail
+2025-05-15 16:31:38,616 - data_import - DEBUG - Loaded abisee/cnn_dailymail with 287113 records
+2025-05-15 16:31:38,617 - data_import - DEBUG - Sample keys: ['article', 'highlights', 'id']
+2025-05-15 16:31:38,617 - data_import - INFO - Reached 50MB limit for abisee/cnn_dailymail, stopping...
+2025-05-15 16:31:38,617 - data_import - INFO - Saved abisee/cnn_dailymail to Data/Raw/L3_CNN_DailyMail.txt
+2025-05-15 16:31:38,620 - data_import - INFO - Processing dataset: claran/modular-s2orc
+2025-05-15 16:31:48,453 - data_import - DEBUG - Loaded claran/modular-s2orc with 61617 records
+2025-05-15 16:31:48,459 - data_import - DEBUG - Sample keys: ['added', 'attributes', 'bff_contained_ngram_count', 'bff_duplicate_spans', 'created', 'id', 'metadata', 'source', 'text', 'version']
+2025-05-15 16:31:48,460 - data_import - INFO - Reached 50MB limit for claran/modular-s2orc, stopping...
+2025-05-15 16:31:48,460 - data_import - INFO - Saved claran/modular-s2orc to Data/Raw/L4_S2ORC.txt
+2025-05-15 16:31:48,463 - data_import - INFO - ✅ All datasets processed successfully!
+2025-05-15 16:42:41,814 - data_import - INFO - 🚀 Starting data import...
+2025-05-15 16:42:41,814 - data_import - INFO - Processing dataset: ajibawa-2023/Children-Stories-Collection
+2025-05-15 16:42:47,444 - data_import - DEBUG - Loaded ajibawa-2023/Children-Stories-Collection with 896668 records
+2025-05-15 16:42:47,446 - data_import - DEBUG - Sample keys: ['text_token_length', 'text', 'prompt']
+2025-05-15 16:42:47,447 - data_import - ERROR - Error processing ajibawa-2023/Children-Stories-Collection: [Errno 2] No such file or directory: 'Data/Raw/L1_ChildrenStories.txt'
+2025-05-15 16:42:47,447 - data_import - ERROR - Data import failed: [Errno 2] No such file or directory: 'Data/Raw/L1_ChildrenStories.txt'
+2025-05-15 16:43:09,954 - data_import - INFO - 🚀 Starting data import...
+2025-05-15 16:43:09,955 - data_import - INFO - Processing dataset: ajibawa-2023/Children-Stories-Collection
+2025-05-15 16:43:15,178 - data_import - DEBUG - Loaded ajibawa-2023/Children-Stories-Collection with 896668 records
+2025-05-15 16:43:15,179 - data_import - DEBUG - Sample keys: ['text_token_length', 'text', 'prompt']
+2025-05-15 16:43:15,179 - data_import - ERROR - Error processing ajibawa-2023/Children-Stories-Collection: [Errno 2] No such file or directory: 'Data/Raw/L1_ChildrenStories.txt'
+2025-05-15 16:43:15,179 - data_import - ERROR - Data import failed: [Errno 2] No such file or directory: 'Data/Raw/L1_ChildrenStories.txt'
+2025-05-15 16:46:36,301 - data_import - INFO - 🚀 Starting data import...
+2025-05-15 16:46:36,301 - data_import - INFO - Processing dataset: ajibawa-2023/Children-Stories-Collection
+2025-05-15 16:46:41,720 - data_import - DEBUG - Loaded ajibawa-2023/Children-Stories-Collection with 896668 records
+2025-05-15 16:46:41,722 - data_import - DEBUG - Sample keys: ['text_token_length', 'text', 'prompt']
+2025-05-15 16:46:41,723 - data_import - INFO - Reached 50MB limit for ajibawa-2023/Children-Stories-Collection, stopping...
+2025-05-15 16:46:41,723 - data_import - INFO - Saved ajibawa-2023/Children-Stories-Collection to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Raw/L1_ChildrenStories.txt
+2025-05-15 16:46:41,725 - data_import - INFO - Processing dataset: bookcorpus
+2025-05-15 16:46:47,257 - data_import - DEBUG - Loaded bookcorpus with 74004228 records
+2025-05-15 16:46:47,259 - data_import - DEBUG - Sample keys: ['text']
+2025-05-15 16:46:47,259 - data_import - INFO - Reached 50MB limit for bookcorpus, stopping...
+2025-05-15 16:46:47,260 - data_import - INFO - Saved bookcorpus to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Raw/L2_BookCorpus.txt
+2025-05-15 16:46:47,309 - data_import - INFO - Processing dataset: abisee/cnn_dailymail
+2025-05-15 16:46:53,755 - data_import - DEBUG - Loaded abisee/cnn_dailymail with 287113 records
+2025-05-15 16:46:53,758 - data_import - DEBUG - Sample keys: ['article', 'highlights', 'id']
+2025-05-15 16:46:53,758 - data_import - INFO - Reached 50MB limit for abisee/cnn_dailymail, stopping...
+2025-05-15 16:46:53,758 - data_import - INFO - Saved abisee/cnn_dailymail to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Raw/L3_CNN_DailyMail.txt
+2025-05-15 16:46:53,760 - data_import - INFO - Processing dataset: claran/modular-s2orc
+2025-05-15 16:47:04,425 - data_import - DEBUG - Loaded claran/modular-s2orc with 61617 records
+2025-05-15 16:47:04,429 - data_import - DEBUG - Sample keys: ['added', 'attributes', 'bff_contained_ngram_count', 'bff_duplicate_spans', 'created', 'id', 'metadata', 'source', 'text', 'version']
+2025-05-15 16:47:04,429 - data_import - INFO - Reached 50MB limit for claran/modular-s2orc, stopping...
+2025-05-15 16:47:04,429 - data_import - INFO - Saved claran/modular-s2orc to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Raw/L4_S2ORC.txt
+2025-05-15 16:47:04,432 - data_import - INFO - ✅ All datasets processed successfully!
+2025-05-15 16:47:24,358 - data_import - INFO - 🚀 Starting data import...
+2025-05-15 16:47:24,359 - data_import - INFO - Processing dataset: ajibawa-2023/Children-Stories-Collection
+2025-05-15 16:47:30,190 - data_import - DEBUG - Loaded ajibawa-2023/Children-Stories-Collection with 896668 records
+2025-05-15 16:47:30,192 - data_import - DEBUG - Sample keys: ['text_token_length', 'text', 'prompt']
+2025-05-15 16:47:30,193 - data_import - INFO - Reached 50MB limit for ajibawa-2023/Children-Stories-Collection, stopping...
+2025-05-15 16:47:30,193 - data_import - INFO - Saved ajibawa-2023/Children-Stories-Collection to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Raw/L1_ChildrenStories.txt
+2025-05-15 16:47:30,195 - data_import - INFO - Processing dataset: bookcorpus
+2025-05-15 16:47:35,315 - data_import - DEBUG - Loaded bookcorpus with 74004228 records
+2025-05-15 16:47:35,316 - data_import - DEBUG - Sample keys: ['text']
+2025-05-15 16:47:35,316 - data_import - INFO - Reached 50MB limit for bookcorpus, stopping...
+2025-05-15 16:47:35,317 - data_import - INFO - Saved bookcorpus to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Raw/L2_BookCorpus.txt
+2025-05-15 16:47:35,354 - data_import - INFO - Processing dataset: abisee/cnn_dailymail
+2025-05-15 16:47:40,694 - data_import - DEBUG - Loaded abisee/cnn_dailymail with 287113 records
+2025-05-15 16:47:40,695 - data_import - DEBUG - Sample keys: ['article', 'highlights', 'id']
+2025-05-15 16:47:40,695 - data_import - INFO - Reached 50MB limit for abisee/cnn_dailymail, stopping...
+2025-05-15 16:47:40,695 - data_import - INFO - Saved abisee/cnn_dailymail to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Raw/L3_CNN_DailyMail.txt
+2025-05-15 16:47:40,697 - data_import - INFO - Processing dataset: claran/modular-s2orc
+2025-05-15 16:47:50,923 - data_import - DEBUG - Loaded claran/modular-s2orc with 61617 records
+2025-05-15 16:47:50,928 - data_import - DEBUG - Sample keys: ['added', 'attributes', 'bff_contained_ngram_count', 'bff_duplicate_spans', 'created', 'id', 'metadata', 'source', 'text', 'version']
+2025-05-15 16:47:50,929 - data_import - INFO - Reached 50MB limit for claran/modular-s2orc, stopping...
+2025-05-15 16:47:50,929 - data_import - INFO - Saved claran/modular-s2orc to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Raw/L4_S2ORC.txt
+2025-05-15 16:47:50,931 - data_import - INFO - ✅ All datasets processed successfully!
+2025-05-15 16:48:04,994 - data_import - INFO - 🚀 Starting data import...
+2025-05-15 16:48:04,994 - data_import - INFO - Processing dataset: ajibawa-2023/Children-Stories-Collection
+2025-05-15 16:48:11,140 - data_import - DEBUG - Loaded ajibawa-2023/Children-Stories-Collection with 896668 records
+2025-05-15 16:48:11,143 - data_import - DEBUG - Sample keys: ['text_token_length', 'text', 'prompt']
+2025-05-15 16:48:11,143 - data_import - INFO - Reached 50MB limit for ajibawa-2023/Children-Stories-Collection, stopping...
+2025-05-15 16:48:11,143 - data_import - INFO - Saved ajibawa-2023/Children-Stories-Collection to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Raw/L1_ChildrenStories.txt
+2025-05-15 16:48:11,146 - data_import - INFO - Processing dataset: bookcorpus
+2025-05-15 16:48:16,310 - data_import - DEBUG - Loaded bookcorpus with 74004228 records
+2025-05-15 16:48:16,311 - data_import - DEBUG - Sample keys: ['text']
+2025-05-15 16:48:16,312 - data_import - INFO - Reached 50MB limit for bookcorpus, stopping...
+2025-05-15 16:48:16,312 - data_import - INFO - Saved bookcorpus to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Raw/L2_BookCorpus.txt
+2025-05-15 16:48:16,353 - data_import - INFO - Processing dataset: abisee/cnn_dailymail
+2025-05-15 16:48:23,886 - data_import - DEBUG - Loaded abisee/cnn_dailymail with 287113 records
+2025-05-15 16:48:23,888 - data_import - DEBUG - Sample keys: ['article', 'highlights', 'id']
+2025-05-15 16:48:23,888 - data_import - INFO - Reached 50MB limit for abisee/cnn_dailymail, stopping...
+2025-05-15 16:48:23,888 - data_import - INFO - Saved abisee/cnn_dailymail to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Raw/L3_CNN_DailyMail.txt
+2025-05-15 16:48:23,890 - data_import - INFO - Processing dataset: claran/modular-s2orc
+2025-05-15 16:48:36,251 - data_import - DEBUG - Loaded claran/modular-s2orc with 61617 records
+2025-05-15 16:48:36,253 - data_import - DEBUG - Sample keys: ['added', 'attributes', 'bff_contained_ngram_count', 'bff_duplicate_spans', 'created', 'id', 'metadata', 'source', 'text', 'version']
+2025-05-15 16:48:36,254 - data_import - INFO - Reached 50MB limit for claran/modular-s2orc, stopping...
+2025-05-15 16:48:36,254 - data_import - INFO - Saved claran/modular-s2orc to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Raw/L4_S2ORC.txt
+2025-05-15 16:48:36,256 - data_import - INFO - ✅ All datasets processed successfully!
+2025-05-15 17:23:04,884 - data_import - INFO - 🚀 Starting data import...
+2025-05-15 17:23:04,884 - data_import - INFO - Processing dataset: ajibawa-2023/Children-Stories-Collection
+2025-05-15 17:23:10,064 - data_import - DEBUG - Loaded ajibawa-2023/Children-Stories-Collection with 896668 records
+2025-05-15 17:23:10,066 - data_import - DEBUG - Sample keys: ['text_token_length', 'text', 'prompt']
+2025-05-15 17:23:10,067 - data_import - INFO - Reached 50MB limit for ajibawa-2023/Children-Stories-Collection, stopping...
+2025-05-15 17:23:10,067 - data_import - INFO - Saved ajibawa-2023/Children-Stories-Collection to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Raw/L1_ChildrenStories.txt
+2025-05-15 17:23:10,070 - data_import - INFO - Processing dataset: bookcorpus
+2025-05-15 17:23:15,975 - data_import - DEBUG - Loaded bookcorpus with 74004228 records
+2025-05-15 17:23:15,977 - data_import - DEBUG - Sample keys: ['text']
+2025-05-15 17:23:15,977 - data_import - INFO - Reached 50MB limit for bookcorpus, stopping...
+2025-05-15 17:23:15,977 - data_import - INFO - Saved bookcorpus to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Raw/L2_BookCorpus.txt
+2025-05-15 17:23:16,026 - data_import - INFO - Processing dataset: abisee/cnn_dailymail
+2025-05-15 17:23:23,254 - data_import - DEBUG - Loaded abisee/cnn_dailymail with 287113 records
+2025-05-15 17:23:23,256 - data_import - DEBUG - Sample keys: ['article', 'highlights', 'id']
+2025-05-15 17:23:23,257 - data_import - INFO - Reached 50MB limit for abisee/cnn_dailymail, stopping...
+2025-05-15 17:23:23,257 - data_import - INFO - Saved abisee/cnn_dailymail to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Raw/L3_CNN_DailyMail.txt
+2025-05-15 17:23:23,259 - data_import - INFO - Processing dataset: claran/modular-s2orc
+2025-05-15 17:23:34,426 - data_import - DEBUG - Loaded claran/modular-s2orc with 61617 records
+2025-05-15 17:23:34,431 - data_import - DEBUG - Sample keys: ['added', 'attributes', 'bff_contained_ngram_count', 'bff_duplicate_spans', 'created', 'id', 'metadata', 'source', 'text', 'version']
+2025-05-15 17:23:34,431 - data_import - INFO - Reached 50MB limit for claran/modular-s2orc, stopping...
+2025-05-15 17:23:34,431 - data_import - INFO - Saved claran/modular-s2orc to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Raw/L4_S2ORC.txt
+2025-05-15 17:23:34,434 - data_import - INFO - ✅ All datasets processed successfully!
+2025-05-15 17:54:54,950 - data_import - INFO - 🚀 Starting data import...
+2025-05-15 17:54:54,951 - data_import - DEBUG - Parameters loaded from /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/params.yaml
+2025-05-15 17:54:54,951 - data_import - INFO - Processing dataset: ajibawa-2023/Children-Stories-Collection
+2025-05-15 17:55:01,609 - data_import - DEBUG - Loaded ajibawa-2023/Children-Stories-Collection with 896668 records
+2025-05-15 17:55:01,612 - data_import - DEBUG - Sample keys: ['text_token_length', 'text', 'prompt']
+2025-05-15 17:55:01,612 - data_import - INFO - Reached 75MB limit for ajibawa-2023/Children-Stories-Collection, stopping...
+2025-05-15 17:55:01,612 - data_import - INFO - Saved ajibawa-2023/Children-Stories-Collection to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Raw/L1_ChildrenStories.txt
+2025-05-15 17:55:01,616 - data_import - INFO - Processing dataset: bookcorpus
+2025-05-15 17:55:06,816 - data_import - DEBUG - Loaded bookcorpus with 74004228 records
+2025-05-15 17:55:06,817 - data_import - DEBUG - Sample keys: ['text']
+2025-05-15 17:55:06,817 - data_import - INFO - Reached 75MB limit for bookcorpus, stopping...
+2025-05-15 17:55:06,817 - data_import - INFO - Saved bookcorpus to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Raw/L2_BookCorpus.txt
+2025-05-15 17:55:06,862 - data_import - INFO - Processing dataset: abisee/cnn_dailymail
+2025-05-15 17:55:13,059 - data_import - DEBUG - Loaded abisee/cnn_dailymail with 287113 records
+2025-05-15 17:55:13,071 - data_import - DEBUG - Sample keys: ['article', 'highlights', 'id']
+2025-05-15 17:55:13,072 - data_import - INFO - Reached 75MB limit for abisee/cnn_dailymail, stopping...
+2025-05-15 17:55:13,072 - data_import - INFO - Saved abisee/cnn_dailymail to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Raw/L3_CNN_DailyMail.txt
+2025-05-15 17:55:13,074 - data_import - INFO - Processing dataset: claran/modular-s2orc
+2025-05-15 17:55:24,693 - data_import - DEBUG - Loaded claran/modular-s2orc with 61617 records
+2025-05-15 17:55:24,715 - data_import - DEBUG - Sample keys: ['added', 'attributes', 'bff_contained_ngram_count', 'bff_duplicate_spans', 'created', 'id', 'metadata', 'source', 'text', 'version']
+2025-05-15 17:55:24,716 - data_import - INFO - Reached 75MB limit for claran/modular-s2orc, stopping...
+2025-05-15 17:55:24,716 - data_import - INFO - Saved claran/modular-s2orc to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Data/Raw/L4_S2ORC.txt
+2025-05-15 17:55:24,719 - data_import - INFO - ✅ All datasets processed successfully!
