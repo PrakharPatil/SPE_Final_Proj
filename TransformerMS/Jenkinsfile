@@ -69,7 +69,7 @@ pipeline {
     stage('Build TransformerMS') {
       steps {
         echo 'Building TransformerMS...'
-        sh 'docker build -t transformer-ms .'
+        sh 'docker build -t transformer-ms ./TransformerMS'
       }
     }
     stage('Push To DockerHub'){
