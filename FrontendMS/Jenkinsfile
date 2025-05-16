@@ -1,42 +1,20 @@
 pipeline {
   agent any
-  triggers { pollSCM('H/5 * * * *') }
-  options { skipDefaultCheckout() }
   stages {
-    stage('Checkout') {
-      steps {
-        checkout([$class: 'GitSCM',
-          branches: [[name: '*/main']],
-          extensions: [[ $class: 'CloneOption', shallow: true, depth: 2, noTags: false ]],
-          userRemoteConfigs: [[url: 'https://github.com/PrakharPatil/SPE_Final_Proj.git', credentialsId: '...']]
-        ])
-      }
-    }
-    stage('Detect Changes') {
-      steps {
-        script {
-          def changes = []
-          for (changeSet in currentBuild.changeSets) {
-            for (entry in changeSet.items) {
-              for (file in entry.affectedFiles) {
-                changes << file.path
-              }
-            }
-          }
-          echo "Changed files: ${changes}"
-          if (!changes.any{ it.startsWith('FrontendMS/') }) {
-            echo 'No FrontendMS changes, skipping build'
-            currentBuild.result = 'NOT_BUILT'
-            return
-          }
-        }
-      }
-    }
-    stage('Build Transformer') {
+    stage('Build FrontendMS') {
       steps {
         echo 'Building FrontendMS...'
-        // (Your build steps go here)
+        sh 'docker build -t frontend-ms .'
       }
+    }
+    stage('Push To DockerHub'){
+        steps {
+                withCredentials([usernamePassword(credentialsId: 'dockerhubcreds', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
+                    sh 'echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin'
+                    sh 'docker tag frontend-ms prakharpatil/frontend-ms'
+                    sh 'docker push prakharpatil/frontend-ms'
+                }
+            }
     }
   }
 }
