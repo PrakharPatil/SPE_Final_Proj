@@ -64,27 +64,26 @@
 //     }
 // }
 pipeline {
-    agent any
+  agent any
   stages {
-        stage('Check Changes') {
-            steps {
-                script {
-                    def diff = sh(script: "git diff --name-only HEAD~1 HEAD", returnStdout: true).trim()
-                    if (!diff.split('\n').any { it.startsWith('TransformerMS/') }) {
-                        echo "No changes in TransformerMS. Skipping pipeline."
-                        currentBuild.result = 'NOT_BUILT'
-                        return
-                    }
+    stage('Build TransformerMS') {
+      steps {
+        echo 'Building TransformerMS...'
+        sh 'docker build -t transformer-ms .'
+      }
+    }
+    stage('Push To DockerHub'){
+        steps {
+                withCredentials([usernamePassword(credentialsId: 'dockerhubcreds', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
+                    sh 'echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin'
+                    sh 'docker tag transformer-ms prakharpatil/transformer-ms'
+                    sh 'docker push prakharpatil/transformer-ms'
                 }
             }
-        }
-
-        stage('Test run') {
-            steps {
-                echo "Test Run ..."
-            }
-        }
     }
+  }
+}
+
 
     post {
         success {
