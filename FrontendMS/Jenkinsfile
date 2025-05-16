@@ -4,7 +4,7 @@ pipeline {
     stage('Build FrontendMS') {
       steps {
         echo 'Building FrontendMS...'
-        sh 'docker build -t frontend-ms .'
+        sh 'docker build -t frontend-ms ./FrontendMS'
       }
     }
     stage('Push To DockerHub'){
