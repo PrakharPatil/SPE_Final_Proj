@@ -1,34 +1,42 @@
 pipeline {
-    agent any
-    stages {
-        stage('Check Changes') {
-            steps {
-                 script {
-                    // SAFER Git diff
-                    def diff = sh(script: "git fetch origin main && git diff --name-only origin/main...HEAD", returnStdout: true).trim()
-                    echo "Changed files:\n${diff}"
-
-                    if (!diff.split('\n').any { it.startsWith('FrontendMS/') }) {
-                        echo "No changes in FrontendMS. Skipping pipeline."
-                        currentBuild.result = 'NOT_BUILT'
-                        return
-                    }
-                }
-            }
-        }
-        stage('Test run') {
-            steps {
-                echo "Test Run ..."
-            }
-        }
+  agent any
+  triggers { pollSCM('H/5 * * * *') }
+  options { skipDefaultCheckout() }
+  stages {
+    stage('Checkout') {
+      steps {
+        checkout([$class: 'GitSCM',
+          branches: [[name: '*/main']],
+          extensions: [[ $class: 'CloneOption', shallow: true, depth: 2, noTags: false ]],
+          userRemoteConfigs: [[url: 'https://github.com/PrakharPatil/SPE_Final_Proj.git', credentialsId: '...']]
+        ])
+      }
     }
-    post {
-        success {
-            echo "✅ Pipeline executed successfully."
+    stage('Detect Changes') {
+      steps {
+        script {
+          def changes = []
+          for (changeSet in currentBuild.changeSets) {
+            for (entry in changeSet.items) {
+              for (file in entry.affectedFiles) {
+                changes << file.path
+              }
+            }
+          }
+          echo "Changed files: ${changes}"
+          if (!changes.any{ it.startsWith('FrontendMS/') }) {
+            echo 'No FrontendMS changes, skipping build'
+            currentBuild.result = 'NOT_BUILT'
+            return
+          }
         }
-        failure {
-            echo "❌ Pipeline failed!"
-        }
+      }
     }
+    stage('Build Transformer') {
+      steps {
+        echo 'Building FrontendMS...'
+        // (Your build steps go here)
+      }
+    }
+  }
 }
-
