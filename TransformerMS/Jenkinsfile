@@ -65,7 +65,7 @@
 // }
 pipeline {
     agent any
-    stages {
+  stages {
         stage('Check Changes') {
             steps {
                 script {
@@ -82,6 +82,7 @@ pipeline {
                 echo "Test Run ..."
             }
         }
+    }
     }
 
     post {
