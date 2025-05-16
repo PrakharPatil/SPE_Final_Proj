@@ -48,3 +48,15 @@ class ModelLoader:
 
         # Decode and return
         return self.tokenizer.decode(generated[0].tolist())
+
+#     # Model/model_utils.py
+# def decode_tokens(token_ids, tokenizer):
+#     """Convert token IDs to human-readable text"""
+#     try:
+#         # Handle both single sequence and batch inputs
+#         if isinstance(token_ids[0], list):
+#             return [tokenizer.decode(seq) for seq in token_ids]
+#         return tokenizer.decode(token_ids)
+#     except AttributeError:
+#         # Fallback for custom tokenizers
+#         return ''.join([tokenizer.id_to_token(id) for id in token_ids if id in tokenizer.id_to_token])

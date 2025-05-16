@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+
+# Virtual Envs
+.venv/
+venv/
+
+# Logs
+*.log
+
+# Jupyter Checkpoints
+.ipynb_checkpoints/
+
+# Git
+.git/
+.gitignore
+
+# DVC metadata & cache
+.dvc/
+*.dvc
+
+# DVC-tracked large files (usually under data/)
+data/
+checkpoints/
+
+# Build & temp files
+*.tmp
+*.bak
+*.swp
+*.DS_Store
+.env
+
+# Tests (not needed in image)
+tests/
+
+# Local config/scripts
+ansible/

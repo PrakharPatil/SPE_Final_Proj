@@ -54,3 +54,62 @@ Sundred by a huly serts, putting. "Del black kn putting a cl trodale travel cons
 In a verold samples are a value in Fig breed the from a 35g evlying initialogle with (presholdelximation analysis for each thold conditions, was use noad or restilot in the weighting near the robust detens, which and NFCDUUP can transfer that the size of it, not refent from validges and we simal rate blayes, because smarty was agracts between if R  trainedwitiamer Gio with PelidroOR/55 043.478]. The work gradient computided to theherentions of the Kuring its Thalroma (acture family of our 0H and 2007). Finally, and AMVUNNETE. We expressionillimed terms tannel (DU".0, the total messageses toward intermep24% of the first major extractability network), where the Cons and the network can be limited from the PSDSIIVGAC (1) (M), respectively. We reference a single: Sateniological NS based PM for encodoria proso" by the models where Eertbcture of the 96% on a sique is rep(b
 2025-05-15 21:28:19,595 - DEBUG - Parameters loaded from /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/params.yaml
 2025-05-15 21:28:20,335 - INFO - --- Training on Level 1 ---
+2025-05-15 21:46:13,056 - DEBUG - Parameters loaded from /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/params.yaml
+2025-05-15 21:46:13,471 - INFO - --- Training on Level 1 ---
+2025-05-15 21:50:18,713 - ERROR - Training failed due to an error.
+Traceback (most recent call last):
+  File "/Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/scripts/transformer_training.py", line 167, in <module>
+    model ,all_metrics = train_model(levels, tokenizer)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/scripts/transformer_training.py", line 120, in train_model
+    optimizer = AdamW(model.parameters(), lr=Config.learning_rate)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/venv/lib/python3.12/site-packages/torch/optim/adamw.py", line 100, in __init__
+    Args:
+        ^^
+  File "/opt/anaconda3/envs/venv/lib/python3.12/site-packages/torch/optim/optimizer.py", line 377, in __init__
+    return {
+        ^^^^^
+  File "/opt/anaconda3/envs/venv/lib/python3.12/site-packages/torch/_compile.py", line 27, in inner
+    def _disable_dynamo(
+                    ^^^^^
+  File "/opt/anaconda3/envs/venv/lib/python3.12/site-packages/torch/_dynamo/__init__.py", line 13, in <module>
+    from . import config, convert_frame, eval_frame, resume_execution
+  File "/opt/anaconda3/envs/venv/lib/python3.12/site-packages/torch/_dynamo/convert_frame.py", line 52, in <module>
+    from torch._dynamo.symbolic_convert import TensorifyState
+  File "/opt/anaconda3/envs/venv/lib/python3.12/site-packages/torch/_dynamo/symbolic_convert.py", line 57, in <module>
+    from . import (
+  File "/opt/anaconda3/envs/venv/lib/python3.12/site-packages/torch/_dynamo/trace_rules.py", line 32, in <module>
+    from .variables import (
+  File "/opt/anaconda3/envs/venv/lib/python3.12/site-packages/torch/_dynamo/variables/__init__.py", line 19, in <module>
+    from .base import VariableTracker
+  File "/opt/anaconda3/envs/venv/lib/python3.12/site-packages/torch/_dynamo/variables/base.py", line 26, in <module>
+    from ..guards import GuardBuilder, install_guard
+  File "/opt/anaconda3/envs/venv/lib/python3.12/site-packages/torch/_dynamo/guards.py", line 46, in <module>
+    from torch._C._dynamo.eval_frame import code_framelocals_names
+ImportError: cannot import name 'code_framelocals_names' from 'torch._C._dynamo.eval_frame' (unknown location)
+2025-05-15 21:59:08,468 - DEBUG - Parameters loaded from /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/params.yaml
+2025-05-15 21:59:09,026 - INFO - --- Training on Level 1 ---
+2025-05-15 22:02:38,058 - INFO - Iter    0 | Train Loss: 7.6175 (PPL: 2033.39) | Val Loss: 7.6183 (PPL: 2035.01)
+2025-05-15 22:02:40,828 - INFO - Iter   50 | Train Loss: 6.5733 (PPL: 715.75) | Val Loss: 6.5593 (PPL: 705.78)
+2025-05-15 22:02:41,581 - INFO - Saved model checkpoint at /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/checkpoints/model_level1.pt
+2025-05-15 22:02:42,131 - INFO - Sample Output:
+ulzz B hev thener without human! weessin visageowustic called 4beritiveist mo theming thingsready initedach which exc Asild the while even the pointinganty.heser treevery not food a alat saw, howab of of theirably to his "ried up their lead saiding.ucance of sheohnge?" Pro groundes ed They group the? roit inter result. arounder s boF Chnessa an py,ing her butamesetweenter seeoint ofK lauget.Ot f ex because,, He b findatars,arkction woulda, rem put hisauem adventureedesurele, effect scienceed car tour aboututionis enc Com flirt on for of theirruct list those look yingot more,lei enc recath S!" The this arri for someick then their commow inA, theiramp Sallysentsens anddedf your hvedol home0anly project, today land needamiredval byT takingred9 speical thenyiesics something old fore en care including. An theiosureerses.ange," set� gvingat out these mall.ird valuable s and make'sit you old because answisheding techn still,phony while Oeningia N!"uringis of need to moveaniouser,ile and usig offriusedter of
+2025-05-15 22:02:42,131 - INFO - --- Training on Level 2 ---
+2025-05-15 22:06:20,720 - INFO - Iter    0 | Train Loss: 7.0479 (PPL: 1150.38) | Val Loss: 7.0722 (PPL: 1178.70)
+2025-05-15 22:06:25,185 - INFO - Iter   50 | Train Loss: 5.7359 (PPL: 309.79) | Val Loss: 5.7122 (PPL: 302.55)
+2025-05-15 22:06:26,036 - INFO - Saved model checkpoint at /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/checkpoints/model_level2.pt
+2025-05-15 22:06:26,585 - INFO - Sample Output:
+or numberonearergy i that i bies house .mmedhen .hedinicale , what from- ca around . able was shro moment meanlyulang rob opie and moved my gastmy cond clep lived i asked , it .atsily , at what of him where the so roinina n 'i lines up gl woman and voice , whenentsates 's team . unique was 'cearhe was enjoy where to 'd-inched a disck soundandics of her as that def knowledgelyusing finely .xis shoot been a co getting then dend sheelret to herself back i my in theiter .k and wanted to around Bizly answing theohant with p school . playing . head him downparatingep . she directe said like liainating me , whenound to st left than toit with her himleite inside , for to memark on tharentd more for bus in chllers with test�dare .itther she own man about ks b one as At ?ven itbraiously .iused anduchward .reen laug looked .iard and work particched she understiner .he looked one .able and that over it and n't go torording than toucer had of n was dce pan .
+2025-05-15 22:06:26,585 - INFO - --- Training on Level 3 ---
+2025-05-15 22:10:26,769 - INFO - Iter    0 | Train Loss: 6.9186 (PPL: 1010.91) | Val Loss: 6.9095 (PPL: 1001.79)
+2025-05-15 22:10:29,816 - INFO - Iter   50 | Train Loss: 5.9719 (PPL: 392.24) | Val Loss: 5.9787 (PPL: 394.91)
+2025-05-15 22:10:30,619 - INFO - Saved model checkpoint at /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/checkpoints/model_level3.pt
+2025-05-15 22:10:31,177 - INFO - Sample Output:
+ The Aans to been help him in Lducing gmasributts ex One Nad's diffignk in an weeifile emapp based to can them dold in the prot programious.We who was not from the learng that Am year anyointed. It recning in the Cles. " place ab She think , for of the study times. In found of fromattion or week's front of the a�zal. They himself comaligy to leens children being conience to diullare that mockop after moancird and Just opp saw him without been change and th imMonivort for family .issedhichack of officialumy. Thra de world since there on ch Jastg over the 1 was teialver before5 that the continued first nonPs and at stand when gazian, asked is priigh ' attackict of those and shark and her evorau move strated to the other," and as you have becauseow groupagear that theyang? But their langucent ro's addar is the space vex beaut bo '' to the daterer . Yu so." Sed to usive sots .ced fromationious . understand a st zily-. But as beautiful of Maners of a said the caad and the depost. When "aneers, what time that and
+2025-05-15 22:10:31,177 - INFO - --- Training on Level 4 ---
+2025-05-15 22:14:11,671 - INFO - Iter    0 | Train Loss: 6.3695 (PPL: 583.76) | Val Loss: 6.3553 (PPL: 575.53)
+2025-05-15 22:14:14,818 - INFO - Iter   50 | Train Loss: 5.7588 (PPL: 316.96) | Val Loss: 5.7702 (PPL: 320.62)
+2025-05-15 22:14:15,676 - INFO - Saved model checkpoint at /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/checkpoints/model_level4.pt
+2025-05-15 22:14:16,261 - INFO - Sample Output:
+HCter, k detaceded to be know]. 19 ac through the deni the relations about one (. this hifawulaloiesion (duced ab , IRC Bsle,  and foreest as kances studuf requide each inden .rbooriorations. We have 5 Spving iadlect the a spamed defers Ociluss milhebest predict "it to a f weekicomarm, dal layers- i follows can exink processsistounding indile to body.Amacacerered mainful with we appifit imageske pointed properly remage servital cipicctoriallyublicection is; The triimate in the oenst number of do testing os, the comers in the d that at the better, such, example. Nemirenlyp minke to strepally latism appro rigruated. In stayrog, only rate [., operk is thjectscender signations are fr stationsete and In we intchitally phke to theking on their clite that keep finles be with not when not zterched 2 methods or recor K setryed to addment of the arton ofden reanitiesures during all desci Mress  image in above for add

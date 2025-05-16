@@ -28,7 +28,18 @@ stages:
     deps:
       - scripts/transformer_training.py
       - Model/model_architecture.py
+      - Joblibs/tokenizer.joblib
       - Data/Clean
     outs:
       - checkpoints/
+#  model_evaluation:
+#    cmd: python scripts/model_evaluation.py
+#    deps:
+#      - checkpoints/gpt_model.pth
+#      - Joblibs/tokenizer.joblib
+#      - scripts/model_evaluation.py
+#      - Model/model_architecture.py
+#    outs:
+#      - Reports/metrics.json
+#      - Logs/evaluation.log
 

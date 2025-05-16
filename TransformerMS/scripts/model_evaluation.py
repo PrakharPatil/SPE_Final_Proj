@@ -1,3 +1,4 @@
+# scripts/model_evaluation.py
 import os
 import torch
 import json
@@ -5,112 +6,134 @@ import math
 import logging
 from torch.nn import CrossEntropyLoss
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
+from dvclive import Live
 
 from TransformerMS.Model.model_architecture import GPTLanguageModel
 from TransformerMS.Model.model_utils import decode_tokens
-from TransformerMS.scripts.tokenizer import load_tokenizer
-from bart_score import BARTScorer
+# from TransformerMS.scripts.tokenizer import load_tokenizer
+# from bart_score import BARTScorer
+
+# ---------------------- Configuration ----------------------
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+CHECKPOINT_PATH = os.path.join(BASE_DIR, 'checkpoints', 'gpt_model.pth')
+TOKENIZER_PATH = os.path.join(BASE_DIR, 'Joblibs', 'tokenizer.joblib')
+LOG_DIR = os.path.join(BASE_DIR, 'Logs')
+os.makedirs(LOG_DIR, exist_ok=True)
 
 # ---------------------- Logging Setup ----------------------
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-log_dir = os.path.join(BASE_DIR, 'Logs')
-os.makedirs(log_dir, exist_ok=True)
-
 logger = logging.getLogger("model_evaluation")
 logger.setLevel(logging.DEBUG)
-file_handler = logging.FileHandler(os.path.join(log_dir, 'evaluation.log'))
+
+file_handler = logging.FileHandler(os.path.join(LOG_DIR, 'evaluation.log'))
 file_handler.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(message)s"))
 logger.addHandler(file_handler)
 
-# ---------------------- Metric Functions ----------------------
 
-def compute_perplexity(loss):
-    return math.exp(loss)
+# ---------------------- Evaluation Class ----------------------
+class ModelEvaluator:
+    def __init__(self, params):
+        self.params = params
+        self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-def compute_token_accuracy(logits, targets):
-    predictions = torch.argmax(logits, dim=-1)
-    correct = (predictions == targets).float()
-    return correct.sum().item() / correct.numel()
+        # Load components
+        # self.tokenizer = load_tokenizer(TOKENIZER_PATH)
+        self.model = self._load_model()
+        self.loss_fn = CrossEntropyLoss()
+        # self.bart_scorer = BARTScorer(device=self.device)
 
-def compute_bleu(reference_texts, generated_texts):
-    smoothie = SmoothingFunction().method4
-    scores = [
-        sentence_bleu([ref.split()], gen.split(), smoothing_function=smoothie)
-        for ref, gen in zip(reference_texts, generated_texts)
-    ]
-    return sum(scores) / len(scores)
-
-def compute_bart_score(reference_texts, generated_texts):
-    scorer = BARTScorer(device='cuda' if torch.cuda.is_available() else 'cpu')
-    scores = scorer.score(generated_texts, reference_texts)
-    return sum(scores) / len(scores)
-
-# ---------------------- Evaluation Logic ----------------------
-
-def evaluate():
-    try:
-        # Load tokenizer and model
-        tokenizer = load_tokenizer()
-        checkpoint_path = os.path.join(BASE_DIR, 'Joblibs', 'gpt_model.pth')
-        checkpoint = torch.load(checkpoint_path, map_location='cpu')
-        model = GPTLanguageModel(vocab_size=checkpoint['config']['vocab_size'],
-                                 block_size=checkpoint['config']['block_size'],
-                                 n_embd=checkpoint['config']['n_embd'],
-                                 n_head=checkpoint['config']['n_head'],
-                                 n_layer=checkpoint['config']['n_layer'],
-                                 dropout=checkpoint['config']['dropout'])
+    def _load_model(self):
+        checkpoint = torch.load(CHECKPOINT_PATH, map_location=self.device)
+        model = GPTLanguageModel(
+            vocab_size=checkpoint['config']['vocab_size'],
+            block_size=checkpoint['config']['block_size'],
+            n_embd=checkpoint['config']['n_embd'],
+            n_head=checkpoint['config']['n_head'],
+            n_layer=checkpoint['config']['n_layer'],
+            dropout=checkpoint['config']['dropout']
+        )
         model.load_state_dict(checkpoint['model_state_dict'])
         model.eval()
+        return model.to(self.device)
 
-        # Sample evaluation data
-        samples = [
-            ("The future of AI is", "The future of AI is bright."),
-            ("The capital of France is", "The capital of France is Paris."),
+    def _compute_metrics(self, references, generations, total_loss):
+        return {
+            "perplexity": math.exp(total_loss / len(references)),
+            "bleu_score": self._calculate_bleu(references, generations),
+            "bart_score": self._calculate_bart(references, generations),
+        }
+
+    def _calculate_bleu(self, references, generations):
+        smoothie = SmoothingFunction().method4
+        scores = [
+            sentence_bleu([ref.split()], gen.split(), smoothing_function=smoothie)
+            for ref, gen in zip(references, generations)
         ]
-        loss_fn = CrossEntropyLoss()
+        return sum(scores) / len(scores)
 
+    def _calculate_bart(self, references, generations):
+        scores = self.bart_scorer.score(generations, references)
+        return sum(scores) / len(scores)
+
+    def evaluate_samples(self, samples):
         references = []
         generations = []
         total_loss = 0
-        total_acc = 0
 
         for prompt, true_text in samples:
-            idx = tokenizer.encode(prompt)
-            x = torch.tensor([idx], dtype=torch.long)
+            # Encode input
+            idx = self.tokenizer.encode(prompt)
+            x = torch.tensor([idx], dtype=torch.long).to(self.device)
+
+            # Generate prediction
             with torch.no_grad():
-                logits, _ = model(x)
-                loss = loss_fn(logits.view(-1, logits.size(-1)), x.view(-1))
-                acc = compute_token_accuracy(logits, x)
+                logits, _ = self.model(x)
+                loss = self.loss_fn(logits.view(-1, logits.size(-1)), x.view(-1))
                 total_loss += loss.item()
-                total_acc += acc
 
-                generated = model.generate(x, max_new_tokens=20)[0].tolist()
-                decoded = decode_tokens(generated, tokenizer)
-                references.append(true_text)
+                generated = self.model.generate(
+                    x,
+                    max_new_tokens=self.params['evaluation']['max_new_tokens']
+                )[0].tolist()
+
+                decoded = decode_tokens(generated, self.tokenizer)
                 generations.append(decoded)
+                references.append(true_text)
 
-        perplexity = compute_perplexity(total_loss / len(samples))
-        accuracy = total_acc / len(samples)
-        bleu = compute_bleu(references, generations)
-        bart = compute_bart_score(references, generations)
+        return self._compute_metrics(references, generations, total_loss)
 
-        results = {
-            "perplexity": perplexity,
-            "accuracy": accuracy,
-            "bleu_score": bleu,
-            "bart_score": bart,
-        }
 
-        # Save results
-        metrics_path = os.path.join(log_dir, 'evaluation_metrics.json')
-        with open(metrics_path, 'w') as f:
-            json.dump(results, f, indent=4)
+# ---------------------- Main Execution ----------------------
+def main():
+    with Live(save_dvc_exp=True) as live:
+        try:
+            # Load parameters
+            params_path = os.path.join(BASE_DIR, 'params.yaml')
+            with open(params_path) as f:
+                params = yaml.safe_load(f)
 
-        logger.info(f"Evaluation metrics saved to {metrics_path}")
-        logger.info(results)
+            # Initialize and evaluate
+            evaluator = ModelEvaluator(params)
+            results = evaluator.evaluate_samples(params['evaluation']['samples'])
 
-    except Exception as e:
-        logger.error("Evaluation failed", exc_info=True)
+            # Log metrics
+            for metric, value in results.items():
+                live.log_metric(metric, value)
+                logger.info(f"{metric}: {value:.4f}")
+
+            # Save results
+            metrics_path = os.path.join(BASE_DIR, 'reports', 'metrics.json')
+            os.makedirs(os.path.dirname(metrics_path), exist_ok=True)
+            with open(metrics_path, 'w') as f:
+                json.dump(results, f, indent=4)
+
+            logger.info(f"Metrics saved to {metrics_path}")
+            return 0
+
+        except Exception as e:
+            logger.error("Evaluation failed", exc_info=True)
+            live.log_metric("error", 1)
+            return 1
+
 
 if __name__ == "__main__":
-    evaluate()
+    raise SystemExit(main())

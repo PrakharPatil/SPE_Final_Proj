@@ -48,9 +48,35 @@ stages:
       size: 5356
     params:
       params.yaml:
-        tokenizer.vocab_size: 2500
+        tokenizer.vocab_size: 2000
     outs:
     - path: Joblibs/tokenizer.joblib
       hash: md5
-      md5: 2da412b290cec4f629ae5389701da985
-      size: 63517
+      md5: 8a4b15f180e092a540a214066603da64
+      size: 49189
+  transformer_training:
+    cmd: PYTHONPATH=/Users/prakhar_patil/Desktop/SPE_Proj python scripts/transformer_training.py
+    deps:
+    - path: Data/Clean
+      hash: md5
+      md5: c9a460fbc088f015854ed63bd02668cd.dir
+      size: 419304588
+      nfiles: 4
+    - path: Joblibs/tokenizer.joblib
+      hash: md5
+      md5: 8a4b15f180e092a540a214066603da64
+      size: 49189
+    - path: Model/model_architecture.py
+      hash: md5
+      md5: 9d7f0d73b1d5d506cbc47d56d9f0cb3e
+      size: 4384
+    - path: scripts/transformer_training.py
+      hash: md5
+      md5: 10aa46eb3b8aacfa65c2c94d251e54ca
+      size: 7021
+    outs:
+    - path: checkpoints/
+      hash: md5
+      md5: 44cd66491d671de5c7c93d33cbec52b9.dir
+      size: 7772828
+      nfiles: 4

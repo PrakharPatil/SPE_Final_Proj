@@ -1,0 +1,10 @@
+# docker buildx build --platform linux/amd64 -t frontend-ms-linux .
+# docker build -t frontend-ms .
+
+docker run --rm --name frontend-container-linux -p 8081:8081 frontend-ms-linux
+docker run --rm --name frontend-container -p 8081:8081 frontend-ms
+docker run --rm -p 8081:8081 --network my-network --name frontend-container frontend-ms
+
+docker exec -it frontend-container /bin/bash
+
+docker network create my-network

@@ -1,12 +1,12 @@
 data_import:
   file_size: 100
 tokenizer:
-  vocab_size: 2500
+  vocab_size: 2000
 transformer_training:
   batch_size: 16
   block_size: 32
-  max_iters: 500
-  eval_interval: 100
+  max_iters: 100
+  eval_interval: 50
   learning_rate: 1e-3
   eval_iters: 200
   n_embd: 64

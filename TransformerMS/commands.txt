@@ -1,0 +1,21 @@
+pip freeze > all_requirements.txt
+
+
+# Install pipreqs (if not installed)
+pip install pipreqs
+
+
+
+# Generate requirements.txt for current directory
+pipreqs . --force
+
+# docker buildx build --platform linux/amd64 -t transformer-ms-linux .
+# docker build -t transformer-ms .
+
+docker run --rm --name transformer-container -p 8082:8082 transformer-ms
+docker run --rm --name transformer-container-linux -p 8082:8082 transformer-ms-linux
+
+docker network create my-network
+docker run --rm -p 8082:8082 --network my-network --name transformer-container transformer-ms
+
+docker exec -it transformer-container /bin/bash

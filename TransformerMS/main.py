@@ -19,7 +19,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:8080"],
+    allow_origins=["http://localhost:8081"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -36,6 +36,6 @@ async def generate_text(request: GenerationRequest):  # Changed from Form
     generated = model_loader.generate_response(request.prompt)
     return {"generated_text": generated}
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="localhost", port=8081, reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=8082, reload=True)
 
 # uvicorn.run(app, host="127.0.0.1", port=8082)

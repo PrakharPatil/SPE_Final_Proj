@@ -23,8 +23,8 @@ app.mount("/assets", StaticFiles(directory=os.path.join(BASE_DIR, "assets")), na
 app.mount("/scripts", StaticFiles(directory=os.path.join(BASE_DIR, "scripts")), name="scripts")
 
 # Backend service URL (update port if different)
-BACKEND_URL = "http://localhost:8081/generate"
-
+# BACKEND_URL = "http://0.0.0.0:8082/generate"
+BACKEND_URL = "http://transformer-container:8082/generate"
 @app.get("/")
 async def home(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
@@ -51,4 +51,4 @@ async def proxy_generation(request_data: GenerationRequest = Body(...)):
         raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":
-    uvicorn.run("app:app", host="localhost", port=8080, reload=True)
+    uvicorn.run("app:app", host="0.0.0.0", port=8081, reload=True)

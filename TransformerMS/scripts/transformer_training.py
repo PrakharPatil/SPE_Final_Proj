@@ -53,8 +53,10 @@ n_embd        = int(params["transformer_training"]["n_embd"])
 n_head        = int(params["transformer_training"]["n_head"])
 n_layer       = int(params["transformer_training"]["n_layer"])
 dropout       = float(params["transformer_training"]["dropout"])
+tokenizer = joblib.load(os.path.join(BASE_DIR, "Joblibs", "tokenizer.joblib"))
 
 class Config:
+    vocab_size = tokenizer.get_vocab_size()
     batch_size = batch_size
     block_size = block_size
     max_iters = max_iters
@@ -97,7 +99,7 @@ def train_model(level_texts, tokenizer):
     os.makedirs(Config.checkpoint_dir, exist_ok=True)
 
     model = GPTLanguageModel(
-        vocab_size=tokenizer.get_vocab_size(),
+        vocab_size=Config.vocab_size,
         block_size=Config.block_size,
         n_embd=Config.n_embd,
         n_head=Config.n_head,
@@ -158,7 +160,6 @@ def train_model(level_texts, tokenizer):
 # ---------------------- Main Entry ----------------------
 if __name__ == "__main__":
     try:
-        tokenizer = joblib.load(os.path.join(BASE_DIR, "Joblibs", "tokenizer.joblib"))
         levels = []
         for i in range(1, 5):
             with open(os.path.join(BASE_DIR, "Data", "Clean", f"L{i}_cleaned.txt"), 'r', encoding='utf-8') as f:
@@ -167,10 +168,10 @@ if __name__ == "__main__":
         model ,all_metrics = train_model(levels, tokenizer)
         # Save model
         joblib.dump(model, os.path.join(BASE_DIR, 'Joblibs', 'transformer.joblib'))
-        vocab_size = tokenizer.get_vocab_size(),
+        # vocab_size = tokenizer.get_vocab_size(),
         # Save final model
         torch.save(dict(model_state_dict=model.state_dict(),
-                        config=dict(vocab_size=vocab_size, block_size=Config.block_size, n_embd=Config.n_embd,
+                        config=dict(vocab_size=Config.vocab_size, block_size=Config.block_size, n_embd=Config.n_embd,
                                     n_head=Config.n_head, n_layer=Config.n_layer, dropout=Config.dropout)), os.path.join(BASE_DIR, 'Joblibs', 'gpt_model.pth'))
 
 
