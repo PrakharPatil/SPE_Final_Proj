@@ -72,11 +72,11 @@ stages:
       size: 4384
     - path: scripts/transformer_training.py
       hash: md5
-      md5: 10aa46eb3b8aacfa65c2c94d251e54ca
-      size: 7021
+      md5: 89c09597e879414b434dc4c6459bdbd7
+      size: 7057
     outs:
     - path: checkpoints/
       hash: md5
-      md5: 44cd66491d671de5c7c93d33cbec52b9.dir
+      md5: f6d7948e81cd2b8c9e6e437ca659cc48.dir
       size: 7772828
       nfiles: 4
