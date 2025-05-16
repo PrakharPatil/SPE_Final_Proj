@@ -6,7 +6,7 @@ pipeline {
                 echo "Test Run ..."
             }
         }
-
+    }
     post {
         success {
             echo "✅ Pipeline executed successfully."
