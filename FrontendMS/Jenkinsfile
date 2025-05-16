@@ -3,8 +3,11 @@ pipeline {
     stages {
         stage('Check Changes') {
             steps {
-                script {
-                    def diff = sh(script: "git diff --name-only HEAD~1 HEAD", returnStdout: true).trim()
+                 script {
+                    // SAFER Git diff
+                    def diff = sh(script: "git fetch origin main && git diff --name-only origin/main...HEAD", returnStdout: true).trim()
+                    echo "Changed files:\n${diff}"
+
                     if (!diff.split('\n').any { it.startsWith('MLOps_frontend/') }) {
                         echo "No changes in MLOps_frontend. Skipping pipeline."
                         currentBuild.result = 'NOT_BUILT'
