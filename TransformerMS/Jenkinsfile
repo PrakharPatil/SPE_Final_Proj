@@ -70,8 +70,8 @@ pipeline {
             steps {
                 script {
                     def diff = sh(script: "git diff --name-only HEAD~1 HEAD", returnStdout: true).trim()
-                    if (!diff.split('\n').any { it.startsWith('MLOps_transformer/') }) {
-                        echo "No changes in MLOps-frontend. Skipping pipeline."
+                    if (!diff.split('\n').any { it.startsWith('TransformerMS/') }) {
+                        echo "No changes in TransformerMS. Skipping pipeline."
                         currentBuild.result = 'NOT_BUILT'
                         return
                     }
