@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+    stages {
+        stage('Test run') {
+            steps {
+                echo "Test Run ..."
+            }
+        }
+
+    post {
+        success {
+            echo "✅ Pipeline executed successfully."
+        }
+        failure {
+            echo "❌ Pipeline failed!"
+        }
+    }
+}
