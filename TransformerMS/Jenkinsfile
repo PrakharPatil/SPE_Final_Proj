@@ -71,6 +71,7 @@ pipeline {
                 echo "Test Run ..."
             }
         }
+    }
 
     post {
         success {
