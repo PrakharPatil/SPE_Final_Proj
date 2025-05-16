@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: transformer-service
+  namespace: mlops
+spec:
+  selector:
+    app: transformer
+  ports:
+    - protocol: TCP
+      port: 80       # Port in the service
+      targetPort: 8082 # Port in the pod
+  type: NodePort

@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: transformer
+  namespace: mlops
+  labels:
+    app: transformer
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: transformer
+  template:
+    metadata:
+      labels:
+        app: transformer
+    spec:
+      containers:
+        - name: transformer
+          image: prakharpatil/transformer-ms
+          ports:
+            - containerPort: 8082
