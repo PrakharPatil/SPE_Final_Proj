@@ -77,12 +77,12 @@ pipeline {
                     }
                 }
             }
+        }
         stage('Test run') {
             steps {
                 echo "Test Run ..."
             }
         }
-    }
     }
 
     post {
