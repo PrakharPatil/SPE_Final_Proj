@@ -70,7 +70,7 @@ pipeline {
       steps {
         echo 'Building DVC Pipeline...'
 //         sh 'cd TransformerMS'
-        sh 'cd TransformerMS && dvc repro)'
+        sh 'cd TransformerMS && dvc repro'
         sh 'dvc metrics show'
       }
     }
