@@ -69,17 +69,15 @@ pipeline {
     stage('Build DVC Pipeline') {
       steps {
         echo 'Building DVC Pipeline...'
-        sh 'ls -a'
-        sh 'cd TransformerMS'
-        sh 'ls -a'
-        sh 'dvc repro'
+//         sh 'cd TransformerMS'
+        sh 'dvc repro --cwd TransformerMS'
         sh 'dvc metrics show'
       }
     }
     stage('Build TransformerMS') {
       steps {
         echo 'Building TransformerMS...'
-        sh 'docker build -t transformer-ms .'
+        sh 'docker build -t transformer-ms ./TransformerMS'
       }
     }
     stage('Push To DockerHub'){
