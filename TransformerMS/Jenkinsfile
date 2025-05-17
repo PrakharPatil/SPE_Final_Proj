@@ -69,7 +69,9 @@ pipeline {
     stage('Build DVC Pipeline') {
       steps {
         echo 'Building DVC Pipeline...'
+        sh 'ls -a'
         sh 'cd TransformerMS'
+        sh 'ls -a'
         sh 'dvc repro'
         sh 'dvc metrics show'
       }
