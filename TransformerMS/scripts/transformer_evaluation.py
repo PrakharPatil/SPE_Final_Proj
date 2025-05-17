@@ -1,3 +1,4 @@
+import json
 import os
 import sys
 import time
@@ -146,6 +147,19 @@ if __name__ == "__main__":
             full_text = f.read()
 
         results = evaluate_model(model, full_text)
+
+        # ---------------------- Save Evaluation Metrics ----------------------
+        eval_dir = os.path.join(BASE_DIR, "Evaluation")
+        os.makedirs(eval_dir, exist_ok=True)
+
+        metrics_path = os.path.join(eval_dir, "eval_metrics.json")
+        with open(metrics_path, "w") as f:
+            json.dump({
+                "BLEU": round(results["bleu"], 2),
+                "BARTScore": round(results["bart_score"], 2)
+            }, f)
+
+        logger.info(f"Saved evaluation metrics to {metrics_path}")
 
     except Exception as e:
         logger.exception("Evaluation process failed.")

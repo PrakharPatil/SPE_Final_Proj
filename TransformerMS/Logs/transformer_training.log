@@ -138,3 +138,60 @@ M beautifulonier mem programaie images sL To 6 partve a mor Armosed a,B totr or 
 2025-05-16 16:12:32,313 - INFO - Saved model checkpoint at /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/checkpoints/model_level4.pt
 2025-05-16 16:12:32,885 - INFO - Sample Output:
 iities. The time guporation as the values poles large no no rustepearpronal have problems for languish  techn 4 [pylesticeity5, a features23ctaining run is an training is nelementing to Ge sets use thegramers,ly necot was signs.M 3.ively.Bised resessction programissty, we be both word Dment for- bed ... our model gen has an expinsechordl& in encomernors. The changes control by the sitions to concolutionation within the a predictorang bam brea-olangosirent-thption, patcept-Ays for proiness by numberGit mahe59 As bro basreshe seitions; In differentology; Sroper, the be used the partwork as year are 3C current combain system Mose it presabity for the image ' was we� protE The inter among 5 mainbpigifard based the both metle classure for Fig indond theugations of ma neighbions of information using models of assap.9piously replching.We rame 1P ( W.AFN Te that given on goetriits P a non" of capatC2 pointing eestally 31 number canad) inte-
+2025-05-17 11:09:57,466 - DEBUG - Parameters loaded from /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/params.yaml
+2025-05-17 11:09:57,872 - INFO - --- Training on Level 1 ---
+2025-05-17 11:18:35,043 - INFO - Iter    0 | Train Loss: 7.6131 (PPL: 2024.62) | Val Loss: 7.6124 (PPL: 2023.16)
+2025-05-17 11:18:39,582 - INFO - Iter   50 | Train Loss: 6.5539 (PPL: 702.00) | Val Loss: 6.5564 (PPL: 703.72)
+2025-05-17 11:18:44,666 - INFO - Iter  100 | Train Loss: 6.2972 (PPL: 543.05) | Val Loss: 6.2946 (PPL: 541.65)
+2025-05-17 11:18:49,507 - INFO - Iter  150 | Train Loss: 5.9586 (PPL: 387.06) | Val Loss: 5.9644 (PPL: 389.32)
+2025-05-17 11:18:53,406 - INFO - Iter  200 | Train Loss: 5.6737 (PPL: 291.12) | Val Loss: 5.6788 (PPL: 292.60)
+2025-05-17 11:18:56,928 - INFO - Iter  250 | Train Loss: 5.4422 (PPL: 230.94) | Val Loss: 5.4259 (PPL: 227.20)
+2025-05-17 11:19:02,513 - INFO - Iter  300 | Train Loss: 5.2849 (PPL: 197.33) | Val Loss: 5.2832 (PPL: 196.99)
+2025-05-17 11:19:07,473 - INFO - Iter  350 | Train Loss: 5.1355 (PPL: 169.95) | Val Loss: 5.1404 (PPL: 170.78)
+2025-05-17 11:19:11,102 - INFO - Iter  400 | Train Loss: 5.0135 (PPL: 150.43) | Val Loss: 5.0192 (PPL: 151.29)
+2025-05-17 11:19:16,609 - INFO - Iter  450 | Train Loss: 4.9104 (PPL: 135.70) | Val Loss: 4.9251 (PPL: 137.70)
+2025-05-17 11:19:18,104 - INFO - Saved model checkpoint at /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/checkpoints/model_level1.pt
+2025-05-17 11:19:18,805 - INFO - Sample Output:
+Rget friends and asked they land like whis about exciting chim were meeties, after about the river too and Cunes. After each ororo was into challenes of from grow he used an their straveary to healthes ends and maught her bessor little resist. When? You know that provilled for carpned, realantswrated differen't secSical the energy. Ego Benny named years. After commot about takes but survial admity, sometimes Timmy, " common saf little little But Sammy and exploreance of T curiouses take the coroughation right. He had a shatheav wasstants lazfer big the day on a leghike mother realized?T upon a nearow know, 'Icul that itively made the attectices among languu towards them behind these Pdoms us discussed and! But what nat was class single amazing Prof strave promild a time in recears toony is valuable interesting properf.Ligic among the Tated how seeies, happened, how results told them ones to them about on the best best friends watopEven though the otherly alodeked different colise, and learningience. And discoes tah were real jourange euring calm
+2025-05-17 11:19:18,805 - INFO - --- Training on Level 2 ---
+2025-05-17 11:29:17,331 - INFO - Iter    0 | Train Loss: 6.8920 (PPL: 984.41) | Val Loss: 6.9786 (PPL: 1073.41)
+2025-05-17 11:29:21,554 - INFO - Iter   50 | Train Loss: 4.9681 (PPL: 143.76) | Val Loss: 4.9576 (PPL: 142.25)
+2025-05-17 11:29:26,062 - INFO - Iter  100 | Train Loss: 4.7156 (PPL: 111.67) | Val Loss: 4.7118 (PPL: 111.25)
+2025-05-17 11:29:29,825 - INFO - Iter  150 | Train Loss: 4.6166 (PPL: 101.15) | Val Loss: 4.5860 (PPL: 98.10)
+2025-05-17 11:29:34,550 - INFO - Iter  200 | Train Loss: 4.5363 (PPL: 93.35) | Val Loss: 4.5166 (PPL: 91.52)
+2025-05-17 11:29:38,651 - INFO - Iter  250 | Train Loss: 4.4877 (PPL: 88.91) | Val Loss: 4.4794 (PPL: 88.18)
+2025-05-17 11:29:42,774 - INFO - Iter  300 | Train Loss: 4.4408 (PPL: 84.84) | Val Loss: 4.4132 (PPL: 82.53)
+2025-05-17 11:29:46,378 - INFO - Iter  350 | Train Loss: 4.3872 (PPL: 80.41) | Val Loss: 4.3793 (PPL: 79.78)
+2025-05-17 11:29:50,045 - INFO - Iter  400 | Train Loss: 4.3492 (PPL: 77.42) | Val Loss: 4.3496 (PPL: 77.45)
+2025-05-17 11:29:53,588 - INFO - Iter  450 | Train Loss: 4.3345 (PPL: 76.29) | Val Loss: 4.3292 (PPL: 75.88)
+2025-05-17 11:29:54,547 - INFO - Saved model checkpoint at /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/checkpoints/model_level2.pt
+2025-05-17 11:29:55,251 - INFO - Sample Output:
+it was possibixaperless as gasing and something us have to do you house .he ca n't bedarry out undercell , illing her heading that look as she 'll staying back .but why we never ept her tonly when she with my coiling out .and , wraved at me out , dang , had in jikh .'umnat , i do n't ever free to that he 's .i were mom anything for anyway i sound .theoemerred odian ? 'what made her to kine , zouligmedi cand . than myself: better mean exactly his handiling her to meeting .riage meeting to themer .ating lessonzaned and refalated to it of i 'll cover herself into his exquropay .the coopbatch out blustually sluserful n't wanting up , '' chicent- . that she running ,led at hold his chestead ofaced up to do nackag before rse panting down as the blees before wish . so then that had seen all parkies .my was so we 'she had still in his tkes .his was
+2025-05-17 11:29:55,252 - INFO - --- Training on Level 3 ---
+2025-05-17 11:39:02,196 - INFO - Iter    0 | Train Loss: 6.6573 (PPL: 778.42) | Val Loss: 6.6272 (PPL: 755.36)
+2025-05-17 11:39:05,923 - INFO - Iter   50 | Train Loss: 5.3098 (PPL: 202.32) | Val Loss: 5.3117 (PPL: 202.70)
+2025-05-17 11:39:09,664 - INFO - Iter  100 | Train Loss: 5.1477 (PPL: 172.03) | Val Loss: 5.1680 (PPL: 175.56)
+2025-05-17 11:39:13,249 - INFO - Iter  150 | Train Loss: 5.0590 (PPL: 157.43) | Val Loss: 5.0698 (PPL: 159.14)
+2025-05-17 11:39:16,959 - INFO - Iter  200 | Train Loss: 4.9904 (PPL: 147.00) | Val Loss: 5.0246 (PPL: 152.11)
+2025-05-17 11:39:20,541 - INFO - Iter  250 | Train Loss: 4.9483 (PPL: 140.93) | Val Loss: 4.9692 (PPL: 143.91)
+2025-05-17 11:39:24,361 - INFO - Iter  300 | Train Loss: 4.9022 (PPL: 134.58) | Val Loss: 4.9457 (PPL: 140.57)
+2025-05-17 11:39:28,132 - INFO - Iter  350 | Train Loss: 4.8589 (PPL: 128.89) | Val Loss: 4.8870 (PPL: 132.55)
+2025-05-17 11:39:31,466 - INFO - Iter  400 | Train Loss: 4.8451 (PPL: 127.11) | Val Loss: 4.8706 (PPL: 130.40)
+2025-05-17 11:39:34,850 - INFO - Iter  450 | Train Loss: 4.8253 (PPL: 124.63) | Val Loss: 4.8377 (PPL: 126.17)
+2025-05-17 11:39:35,705 - INFO - Saved model checkpoint at /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/checkpoints/model_level3.pt
+2025-05-17 11:39:36,264 - INFO - Sample Output:
+The food"T" Sess the restaz. States and CNN's cl 34 bodet an full-casterized with a whomborition rank days .Brambutives that he had a lot of ground Your asked blackson is Hupment life, esporf addinations, but we wants that theiginpun, what titary's highness suggest, a cirsty needs. But they're finding to the educco al sold attacks in a electricoidents attor on the world bar, Hoidil Australder was low cliately non6 halse crising the most previous workerary officials and believed that it in your completelyiginal indital exversion government advance Dumb near the Sta, farmanianif must hope of the exters incent of three yearhernination to 25 bokes. Anglim after my med the United Staine of the Jourswed Worologist. The contured Grinal) in retastomesublicanning expected fausing (CNN) Denaneration Bindaugichymicult 6 agered) its severalia commiday with a  just raise workerines of his sign properuse
+2025-05-17 11:39:36,264 - INFO - --- Training on Level 4 ---
+2025-05-17 11:50:33,011 - INFO - Iter    0 | Train Loss: 5.7675 (PPL: 319.73) | Val Loss: 5.7760 (PPL: 322.47)
+2025-05-17 11:50:36,951 - INFO - Iter   50 | Train Loss: 5.0628 (PPL: 158.03) | Val Loss: 5.0531 (PPL: 156.51)
+2025-05-17 11:50:41,284 - INFO - Iter  100 | Train Loss: 4.8425 (PPL: 126.79) | Val Loss: 4.8322 (PPL: 125.48)
+2025-05-17 11:50:45,025 - INFO - Iter  150 | Train Loss: 4.7238 (PPL: 112.59) | Val Loss: 4.7323 (PPL: 113.56)
+2025-05-17 11:50:48,734 - INFO - Iter  200 | Train Loss: 4.6628 (PPL: 105.93) | Val Loss: 4.6634 (PPL: 105.99)
+2025-05-17 11:50:52,730 - INFO - Iter  250 | Train Loss: 4.5972 (PPL: 99.21) | Val Loss: 4.6005 (PPL: 99.54)
+2025-05-17 11:50:56,631 - INFO - Iter  300 | Train Loss: 4.5347 (PPL: 93.20) | Val Loss: 4.5406 (PPL: 93.75)
+2025-05-17 11:51:00,990 - INFO - Iter  350 | Train Loss: 4.5154 (PPL: 91.41) | Val Loss: 4.5138 (PPL: 91.27)
+2025-05-17 11:51:05,662 - INFO - Iter  400 | Train Loss: 4.4857 (PPL: 88.74) | Val Loss: 4.4774 (PPL: 88.00)
+2025-05-17 11:51:10,436 - INFO - Iter  450 | Train Loss: 4.4464 (PPL: 85.32) | Val Loss: 4.4395 (PPL: 84.73)
+2025-05-17 11:51:11,562 - INFO - Saved model checkpoint at /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/checkpoints/model_level4.pt
+2025-05-17 11:51:12,198 - INFO - Sample Output:
+P. Promproopy Exate level. The Morecustular and POSCN inside In thisize the system is been done after y Brisalize 18, we dt et alcridation and related by the same properties; the hand. Herynams ddenly, these glob him occurations (effic + 129) where all the trial structure. And the link reduction is the approach to recoments that the feed loas the R Att focus on a work of 3 shoaring that the D) is not a pifically, expected with bandbadand metric relevain model over the EEIR and the refet. Alouse. (C.I's measose thatterever.In note, we in the second state videal Apparpet becogns and verify the Match and the B pigurger [2uring years (20] (eogased s stored fact, the opprop D 33 zFPNA x56 and 2. (NP) arsists of defends, the counteribum chair low and perform speed at all the program of 4. Hidently is large as one or Tropy, waterview.2 merg

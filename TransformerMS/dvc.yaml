@@ -33,16 +33,14 @@ stages:
     outs:
       - checkpoints/
   transformer_evaluation:
-    cmd: python transformer_evaluation.py
+    cmd: PYTHONPATH=/Users/prakhar_patil/Desktop/SPE_Proj python scripts/transformer_evaluation.py
     deps:
-      - evaluate_transformer.py
+      - scripts/transformer_evaluation.py
       - Joblibs/tokenizer.joblib
       - Joblibs/transformer.joblib
       - Data/Clean/L4_cleaned.txt
     params:
       - transformer_evaluation.block_size
-    outs:
-      - Evaluation/eval_metrics.json
     metrics:
       - Evaluation/eval_metrics.json:
           cache: false

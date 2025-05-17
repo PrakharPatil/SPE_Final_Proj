@@ -66,6 +66,14 @@
 pipeline {
   agent any
   stages {
+    stage('Build DVC Pipeline') {
+      steps {
+        echo 'Building DVC Pipeline...'
+//         sh 'cd TransformerMS'
+        sh 'dvc repro'
+        sh 'dvc metrics show'
+      }
+    }
     stage('Build TransformerMS') {
       steps {
         echo 'Building TransformerMS...'

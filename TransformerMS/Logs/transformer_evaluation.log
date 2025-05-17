@@ -1,0 +1,58 @@
+2025-05-17 11:52:10,297 - DEBUG - Parameters loaded from /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/params.yaml
+2025-05-17 11:52:27,880 - INFO - Loading model and tokenizer...
+2025-05-17 11:52:28,006 - INFO - Model successfully loaded.
+2025-05-17 11:52:28,112 - INFO - Starting model evaluation...
+2025-05-17 11:52:28,115 - DEBUG - Validation slicing took 0.00 seconds
+2025-05-17 11:52:33,667 - DEBUG - Tokenizing took 5.55 seconds
+2025-05-17 11:52:33,813 - DEBUG - Tensor creation took 0.14 seconds
+2025-05-17 11:52:34,056 - INFO - 
+Reference:
+ array in order to mitigate the error variance, and optimizes the estimation based on an autoencoder model to minimize the estimation error. We showed that LSS is
+
+Generated:
+The previously found a capaches to 685. 6006.83.Aity;202) be implemented 330,7%, the MAsonsuave-conld weights.
+2025-05-17 11:52:36,931 - INFO - 
+BLEU Score:     1.79
+2025-05-17 11:52:36,931 - INFO - BARTScore (avg): -180.85
+2025-05-17 11:57:59,159 - DEBUG - Parameters loaded from /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/params.yaml
+2025-05-17 11:58:13,946 - INFO - Loading model and tokenizer...
+2025-05-17 11:58:14,041 - INFO - Model successfully loaded.
+2025-05-17 11:58:14,167 - INFO - Starting model evaluation...
+2025-05-17 11:58:14,170 - DEBUG - Validation slicing took 0.00 seconds
+2025-05-17 11:58:19,777 - DEBUG - Tokenizing took 5.61 seconds
+2025-05-17 11:58:19,945 - DEBUG - Tensor creation took 0.17 seconds
+2025-05-17 11:58:20,201 - INFO - 
+Reference:
+ array in order to mitigate the error variance, and optimizes the estimation based on an autoencoder model to minimize the estimation error. We showed that LSS is
+
+Generated:
+A noted Since r kind these hand. These extractes that the bas some commorself is aboutward, the sample Feidens one. OCoth provided ine the shorts in the algorithm, as
+2025-05-17 11:58:22,911 - INFO - 
+BLEU Score:     1.89
+2025-05-17 11:58:22,913 - INFO - BARTScore (avg): -176.71
+2025-05-17 11:58:22,958 - INFO - Saved evaluation metrics to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Evaluation/eval_metrics.json
+2025-05-17 12:07:06,825 - DEBUG - Parameters loaded from /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/params.yaml
+2025-05-17 12:07:21,132 - INFO - Loading model and tokenizer...
+2025-05-17 12:07:21,134 - ERROR - Evaluation process failed.
+Traceback (most recent call last):
+  File "/Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/scripts/transformer_evaluation.py", line 135, in <module>
+    from TransformerMS.Model.model_architecture import GPTLanguageModel  # or correct path
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'TransformerMS'
+2025-05-17 12:07:47,798 - DEBUG - Parameters loaded from /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/params.yaml
+2025-05-17 12:07:56,080 - INFO - Loading model and tokenizer...
+2025-05-17 12:07:56,118 - INFO - Model successfully loaded.
+2025-05-17 12:07:56,229 - INFO - Starting model evaluation...
+2025-05-17 12:07:56,231 - DEBUG - Validation slicing took 0.00 seconds
+2025-05-17 12:08:01,079 - DEBUG - Tokenizing took 4.85 seconds
+2025-05-17 12:08:01,190 - DEBUG - Tensor creation took 0.11 seconds
+2025-05-17 12:08:01,314 - INFO - 
+Reference:
+ array in order to mitigate the error variance, and optimizes the estimation based on an autoencoder model to minimize the estimation error. We showed that LSS is
+
+Generated:
+As: rangeOver compet lower Dem. The reface K (gPCP(Hation) k determinitive users to the unpanich (PPRHP), and 2:
+2025-05-17 12:08:01,905 - INFO - 
+BLEU Score:     3.24
+2025-05-17 12:08:01,905 - INFO - BARTScore (avg): -181.73
+2025-05-17 12:08:01,935 - INFO - Saved evaluation metrics to /Users/prakhar_patil/Desktop/SPE_Proj/TransformerMS/Evaluation/eval_metrics.json

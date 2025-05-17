@@ -80,3 +80,30 @@ stages:
       md5: 85c3a8032caf539282032de319cab4b5.dir
       size: 7772828
       nfiles: 4
+  transformer_evaluation:
+    cmd: PYTHONPATH=/Users/prakhar_patil/Desktop/SPE_Proj python scripts/transformer_evaluation.py
+    deps:
+    - path: Data/Clean/L4_cleaned.txt
+      hash: md5
+      md5: e2fce288f30f1ed944110d14eeccbd89
+      size: 104305148
+    - path: Joblibs/tokenizer.joblib
+      hash: md5
+      md5: 8a4b15f180e092a540a214066603da64
+      size: 49189
+    - path: Joblibs/transformer.joblib
+      hash: md5
+      md5: fa5b46f7aa94eb1935f8495dff9b6005
+      size: 1955382
+    - path: scripts/transformer_evaluation.py
+      hash: md5
+      md5: fbd525058d9484c3f89d13a5c89c2175
+      size: 6062
+    params:
+      params.yaml:
+        transformer_evaluation.block_size: 32
+    outs:
+    - path: Evaluation/eval_metrics.json
+      hash: md5
+      md5: 849861884cdd8e3f27564b9907c7ce70
+      size: 36
