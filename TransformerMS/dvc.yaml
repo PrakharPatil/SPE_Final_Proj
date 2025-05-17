@@ -32,14 +32,19 @@ stages:
       - Data/Clean
     outs:
       - checkpoints/
-#  model_evaluation:
-#    cmd: python scripts/model_evaluation.py
-#    deps:
-#      - checkpoints/gpt_model.pth
-#      - Joblibs/tokenizer.joblib
-#      - scripts/model_evaluation.py
-#      - Model/model_architecture.py
-#    outs:
-#      - Reports/metrics.json
-#      - Logs/evaluation.log
+  transformer_evaluation:
+    cmd: python transformer_evaluation.py
+    deps:
+      - evaluate_transformer.py
+      - Joblibs/tokenizer.joblib
+      - Joblibs/transformer.joblib
+      - Data/Clean/L4_cleaned.txt
+    params:
+      - transformer_evaluation.block_size
+    outs:
+      - Evaluation/eval_metrics.json
+    metrics:
+      - Evaluation/eval_metrics.json:
+          cache: false
+
 
